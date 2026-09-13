@@ -1,0 +1,7420 @@
+{
+  "meta": {
+    "version": "v2026-1.06 (2026-08-01)",
+    "generatedAt": "2026-09-13T17:22:26.604Z",
+    "source": "https://raw.githubusercontent.com/gontera/array30/master/cin2/ar30-regular-v2026-1.06-20260801.cin2",
+    "entryCount": 596
+  },
+  "characters": [
+    {
+      "char": "火",
+      "fullCodes": [
+        ","
+      ],
+      "quickCodes": [
+        ",2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "米",
+      "fullCodes": [
+        ","
+      ],
+      "quickCodes": [
+        ",3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "精",
+      "fullCodes": [
+        ",ru"
+      ],
+      "quickCodes": [
+        ",4",
+        ",r7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "燈",
+      "fullCodes": [
+        ",bqi"
+      ],
+      "quickCodes": [
+        ",5",
+        ",b1"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "料",
+      "fullCodes": [
+        ",hf"
+      ],
+      "quickCodes": [
+        ",6",
+        ",h4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "鄰",
+      "fullCodes": [
+        ",mqt",
+        "t,mq"
+      ],
+      "quickCodes": [
+        ",7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "勞",
+      "fullCodes": [
+        ",,jb"
+      ],
+      "quickCodes": [
+        ",8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "類",
+      "fullCodes": [
+        ",zam",
+        ",zhm"
+      ],
+      "quickCodes": [
+        ",9",
+        ",z6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "營",
+      "fullCodes": [
+        ",,j;"
+      ],
+      "quickCodes": [
+        ",0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "身",
+      "fullCodes": [
+        "."
+      ],
+      "quickCodes": [
+        ".2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "行",
+      "fullCodes": [
+        ".aad"
+      ],
+      "quickCodes": [
+        ".3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "街",
+      "fullCodes": [
+        ".rrd"
+      ],
+      "quickCodes": [
+        ".4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "很",
+      "fullCodes": [
+        ".tx"
+      ],
+      "quickCodes": [
+        ".5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "往",
+      "fullCodes": [
+        ".yr"
+      ],
+      "quickCodes": [
+        ".6",
+        ".y4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "愛",
+      "fullCodes": [
+        ".jn."
+      ],
+      "quickCodes": [
+        ".7",
+        ".j6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "從",
+      "fullCodes": [
+        ".kkc"
+      ],
+      "quickCodes": [
+        ".8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "後",
+      "fullCodes": [
+        ".x."
+      ],
+      "quickCodes": [
+        ".9",
+        ".x9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "得",
+      "fullCodes": [
+        ".pah"
+      ],
+      "quickCodes": [
+        ".0",
+        ".p1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "四",
+      "fullCodes": [
+        "/"
+      ],
+      "quickCodes": [
+        "/1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "虫",
+      "fullCodes": [
+        "/"
+      ],
+      "quickCodes": [
+        "/2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "口",
+      "fullCodes": [
+        ";"
+      ],
+      "quickCodes": [
+        ";1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "叫",
+      "fullCodes": [
+        ";sd"
+      ],
+      "quickCodes": [
+        ";4",
+        ";s3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "呢",
+      "fullCodes": [
+        ";bq"
+      ],
+      "quickCodes": [
+        ";5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "嗎",
+      "fullCodes": [
+        ";g,"
+      ],
+      "quickCodes": [
+        ";6",
+        ";g8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "吹",
+      "fullCodes": [
+        ";jk"
+      ],
+      "quickCodes": [
+        ";7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "別",
+      "fullCodes": [
+        ";be",
+        ";le"
+      ],
+      "quickCodes": [
+        ";8",
+        ";l3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "吃",
+      "fullCodes": [
+        ";os"
+      ],
+      "quickCodes": [
+        ";9",
+        ";o2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "號",
+      "fullCodes": [
+        ";ags"
+      ],
+      "quickCodes": [
+        ";0",
+        ";a5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "一",
+      "fullCodes": [
+        "a"
+      ],
+      "quickCodes": [
+        "a1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "到",
+      "fullCodes": [
+        "axre"
+      ],
+      "quickCodes": [
+        "a2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "聽",
+      "fullCodes": [
+        "aean",
+        "aeln"
+      ],
+      "quickCodes": [
+        "a3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "現",
+      "fullCodes": [
+        "arjs"
+      ],
+      "quickCodes": [
+        "a4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "政",
+      "fullCodes": [
+        "ae."
+      ],
+      "quickCodes": [
+        "a5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "弄",
+      "fullCodes": [
+        "arf"
+      ],
+      "quickCodes": [
+        "a6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "兩",
+      "fullCodes": [
+        "ajdk"
+      ],
+      "quickCodes": [
+        "a7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "而",
+      "fullCodes": [
+        "alje"
+      ],
+      "quickCodes": [
+        "a8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "面",
+      "fullCodes": [
+        "alpe"
+      ],
+      "quickCodes": [
+        "a9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "要",
+      "fullCodes": [
+        "a/w"
+      ],
+      "quickCodes": [
+        "a0",
+        "a/2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "又",
+      "fullCodes": [
+        "b"
+      ],
+      "quickCodes": [
+        "b1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "力",
+      "fullCodes": [
+        "b"
+      ],
+      "quickCodes": [
+        "b2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "屬",
+      "fullCodes": [
+        "bc//"
+      ],
+      "quickCodes": [
+        "b3",
+        "bc0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "居",
+      "fullCodes": [
+        "bf;"
+      ],
+      "quickCodes": [
+        "b4",
+        "bf0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "發",
+      "fullCodes": [
+        "btgb"
+      ],
+      "quickCodes": [
+        "b5",
+        "bt5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "屋",
+      "fullCodes": [
+        "baxr"
+      ],
+      "quickCodes": [
+        "b6",
+        "ba2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "通",
+      "fullCodes": [
+        "bjfn"
+      ],
+      "quickCodes": [
+        "b7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "習",
+      "fullCodes": [
+        "bblp"
+      ],
+      "quickCodes": [
+        "b8",
+        "bb9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "務",
+      "fullCodes": [
+        "bgdb"
+      ],
+      "quickCodes": [
+        "b9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "局",
+      "fullCodes": [
+        "bg;"
+      ],
+      "quickCodes": [
+        "b0",
+        "bg0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "小",
+      "fullCodes": [
+        "c"
+      ],
+      "quickCodes": [
+        "c1"
+      ],
+      "specialCodes": [
+        "dk"
+      ],
+      "tier": 1
+    },
+    {
+      "char": "卜",
+      "fullCodes": [
+        "c"
+      ],
+      "quickCodes": [
+        "c2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "水",
+      "fullCodes": [
+        "c"
+      ],
+      "quickCodes": [
+        "c3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "法",
+      "fullCodes": [
+        "crx"
+      ],
+      "quickCodes": [
+        "c4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "決",
+      "fullCodes": [
+        "ctk"
+      ],
+      "quickCodes": [
+        "c5",
+        "ct8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "注",
+      "fullCodes": [
+        "cyr"
+      ],
+      "quickCodes": [
+        "c6",
+        "cy4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "當",
+      "fullCodes": [
+        "cj;p"
+      ],
+      "quickCodes": [
+        "c7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "對",
+      "fullCodes": [
+        "caih"
+      ],
+      "quickCodes": [
+        "c8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "省",
+      "fullCodes": [
+        "clj"
+      ],
+      "quickCodes": [
+        "c9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "常",
+      "fullCodes": [
+        "cj;d"
+      ],
+      "quickCodes": [
+        "c0",
+        "cj0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "山",
+      "fullCodes": [
+        "d"
+      ],
+      "quickCodes": [
+        "d1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "片",
+      "fullCodes": [
+        "d"
+      ],
+      "quickCodes": [
+        "d2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "門",
+      "fullCodes": [
+        "e"
+      ],
+      "quickCodes": [
+        "e1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "止",
+      "fullCodes": [
+        "e"
+      ],
+      "quickCodes": [
+        "e2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "鬥",
+      "fullCodes": [
+        "e"
+      ],
+      "quickCodes": [
+        "e3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "開",
+      "fullCodes": [
+        "eaf"
+      ],
+      "quickCodes": [
+        "e4",
+        "ea4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "關",
+      "fullCodes": [
+        "exxw"
+      ],
+      "quickCodes": [
+        "e5",
+        "ex2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "鬧",
+      "fullCodes": [
+        "eajd",
+        "eyjd"
+      ],
+      "quickCodes": [
+        "e6",
+        "ey7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "些",
+      "fullCodes": [
+        "eqaa"
+      ],
+      "quickCodes": [
+        "e7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "閱",
+      "fullCodes": [
+        "ek;s"
+      ],
+      "quickCodes": [
+        "e8",
+        "ek0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "處",
+      "fullCodes": [
+        "e.s"
+      ],
+      "quickCodes": [
+        "e9",
+        "e.2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "桌",
+      "fullCodes": [
+        "epv"
+      ],
+      "quickCodes": [
+        "e0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "十",
+      "fullCodes": [
+        "f"
+      ],
+      "quickCodes": [
+        "f1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "莊",
+      "fullCodes": [
+        "fxr"
+      ],
+      "quickCodes": [
+        "f2",
+        "fx4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "落",
+      "fullCodes": [
+        "fc.;"
+      ],
+      "quickCodes": [
+        "f3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "著",
+      "fullCodes": [
+        "frlh",
+        "frlp"
+      ],
+      "quickCodes": [
+        "f4",
+        "fr9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "華",
+      "fullCodes": [
+        "rff",
+        "faff"
+      ],
+      "quickCodes": [
+        "f5",
+        "fa4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "萬",
+      "fullCodes": [
+        "fpm"
+      ],
+      "quickCodes": [
+        "f6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "真",
+      "fullCodes": [
+        "fuak"
+      ],
+      "quickCodes": [
+        "f7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "花",
+      "fullCodes": [
+        "fkq"
+      ],
+      "quickCodes": [
+        "f8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "敬",
+      "fullCodes": [
+        "fl;."
+      ],
+      "quickCodes": [
+        "f9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "故",
+      "fullCodes": [
+        "f;."
+      ],
+      "quickCodes": [
+        "f0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "石",
+      "fullCodes": [
+        "g"
+      ],
+      "quickCodes": [
+        "g1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "戶",
+      "fullCodes": [
+        "g"
+      ],
+      "quickCodes": [
+        "g2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "也",
+      "fullCodes": [
+        "gds"
+      ],
+      "quickCodes": [
+        "g3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "那",
+      "fullCodes": [
+        "gft",
+        "gzt"
+      ],
+      "quickCodes": [
+        "g4"
+      ],
+      "specialCodes": [
+        "gt"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "破",
+      "fullCodes": [
+        "gtb"
+      ],
+      "quickCodes": [
+        "g5",
+        "gt5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "孩",
+      "fullCodes": [
+        "gfyk"
+      ],
+      "quickCodes": [
+        "g6",
+        "gf6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "遍",
+      "fullCodes": [
+        "gjfn"
+      ],
+      "quickCodes": [
+        "g7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "驗",
+      "fullCodes": [
+        "g,ik"
+      ],
+      "quickCodes": [
+        "g8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "承",
+      "fullCodes": [
+        "gfb",
+        "gfgk"
+      ],
+      "quickCodes": [
+        "g9",
+        "gf5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "啟",
+      "fullCodes": [
+        "g;.",
+        "g.;"
+      ],
+      "quickCodes": [
+        "g0",
+        "g;9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "方",
+      "fullCodes": [
+        "h"
+      ],
+      "quickCodes": [
+        "h1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "病",
+      "fullCodes": [
+        "hajk"
+      ],
+      "quickCodes": [
+        "h2",
+        "ha7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "施",
+      "fullCodes": [
+        "hogs"
+      ],
+      "quickCodes": [
+        "h3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "痛",
+      "fullCodes": [
+        "hbjf"
+      ],
+      "quickCodes": [
+        "h4",
+        "hb7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "良",
+      "fullCodes": [
+        "htx"
+      ],
+      "quickCodes": [
+        "h5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "遊",
+      "fullCodes": [
+        "hogn"
+      ],
+      "quickCodes": [
+        "h6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "族",
+      "fullCodes": [
+        "hooz"
+      ],
+      "quickCodes": [
+        "h7",
+        "ho9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "於",
+      "fullCodes": [
+        "hkh"
+      ],
+      "quickCodes": [
+        "h8",
+        "hk6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "為",
+      "fullCodes": [
+        "hlg,"
+      ],
+      "quickCodes": [
+        "h9",
+        "hl5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "旗",
+      "fullCodes": [
+        "hork"
+      ],
+      "quickCodes": [
+        "h0",
+        "ho4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "金",
+      "fullCodes": [
+        "i"
+      ],
+      "quickCodes": [
+        "i1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "半",
+      "fullCodes": [
+        "i"
+      ],
+      "quickCodes": [
+        "i2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "並",
+      "fullCodes": [
+        "ica"
+      ],
+      "quickCodes": [
+        "i3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "鎮",
+      "fullCodes": [
+        "ifuk"
+      ],
+      "quickCodes": [
+        "i4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "食",
+      "fullCodes": [
+        "itx"
+      ],
+      "quickCodes": [
+        "i5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "拿",
+      "fullCodes": [
+        "i;o"
+      ],
+      "quickCodes": [
+        "i6",
+        "i;9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "前",
+      "fullCodes": [
+        "iue"
+      ],
+      "quickCodes": [
+        "i7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "美",
+      "fullCodes": [
+        "irz"
+      ],
+      "quickCodes": [
+        "i8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "道",
+      "fullCodes": [
+        "iljn"
+      ],
+      "quickCodes": [
+        "i9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "會",
+      "fullCodes": [
+        "i/p"
+      ],
+      "quickCodes": [
+        "i0",
+        "i/0"
+      ],
+      "specialCodes": [
+        "i/"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "目",
+      "fullCodes": [
+        "j"
+      ],
+      "quickCodes": [
+        "j1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "刀",
+      "fullCodes": [
+        "j"
+      ],
+      "quickCodes": [
+        "j2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "角",
+      "fullCodes": [
+        "j"
+      ],
+      "quickCodes": [
+        "j3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "周",
+      "fullCodes": [
+        "jf;",
+        "jr;"
+      ],
+      "quickCodes": [
+        "j4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "眼",
+      "fullCodes": [
+        "jtx"
+      ],
+      "quickCodes": [
+        "j5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "運",
+      "fullCodes": [
+        "jqn"
+      ],
+      "quickCodes": [
+        "j6",
+        "jq6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "解",
+      "fullCodes": [
+        "jjq",
+        "jjof"
+      ],
+      "quickCodes": [
+        "j7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "肉",
+      "fullCodes": [
+        "jkk"
+      ],
+      "quickCodes": [
+        "j8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "色",
+      "fullCodes": [
+        "jtds"
+      ],
+      "quickCodes": [
+        "j9",
+        "jt3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "免",
+      "fullCodes": [
+        "j;s",
+        "jps"
+      ],
+      "quickCodes": [
+        "j0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "人",
+      "fullCodes": [
+        "k"
+      ],
+      "quickCodes": [
+        "k1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "入",
+      "fullCodes": [
+        "k"
+      ],
+      "quickCodes": [
+        "k2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "八",
+      "fullCodes": [
+        "k"
+      ],
+      "quickCodes": [
+        "k3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "做",
+      "fullCodes": [
+        "kf;."
+      ],
+      "quickCodes": [
+        "k4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "他",
+      "fullCodes": [
+        "kgds"
+      ],
+      "quickCodes": [
+        "k5",
+        "kg3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "進",
+      "fullCodes": [
+        "kyn"
+      ],
+      "quickCodes": [
+        "k6",
+        "ky6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "你",
+      "fullCodes": [
+        "kjc"
+      ],
+      "quickCodes": [
+        "k7"
+      ],
+      "specialCodes": [
+        "jc"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "坐",
+      "fullCodes": [
+        "kkr"
+      ],
+      "quickCodes": [
+        "k8",
+        "kk4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "作",
+      "fullCodes": [
+        "koe"
+      ],
+      "quickCodes": [
+        "k9",
+        "ko3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "個",
+      "fullCodes": [
+        "kpf;"
+      ],
+      "quickCodes": [
+        "k0",
+        "kp4"
+      ],
+      "specialCodes": [
+        ";;"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "竹",
+      "fullCodes": [
+        "l"
+      ],
+      "quickCodes": [
+        "l1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "看",
+      "fullCodes": [
+        "oj",
+        "lzj"
+      ],
+      "quickCodes": [
+        "l2",
+        "lz7"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "師",
+      "fullCodes": [
+        "lead"
+      ],
+      "quickCodes": [
+        "l3",
+        "le1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "和",
+      "fullCodes": [
+        "lv;"
+      ],
+      "quickCodes": [
+        "l4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "第",
+      "fullCodes": [
+        "ltgl"
+      ],
+      "quickCodes": [
+        "l5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "種",
+      "fullCodes": [
+        "lvop"
+      ],
+      "quickCodes": [
+        "l6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "向",
+      "fullCodes": [
+        "lj;"
+      ],
+      "quickCodes": [
+        "l7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "答",
+      "fullCodes": [
+        "li;"
+      ],
+      "quickCodes": [
+        "l8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "我",
+      "fullCodes": [
+        "lox"
+      ],
+      "quickCodes": [
+        "l9"
+      ],
+      "specialCodes": [
+        "lo"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "的",
+      "fullCodes": [
+        "t",
+        "lplh"
+      ],
+      "quickCodes": [
+        "l0"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "貝",
+      "fullCodes": [
+        "m"
+      ],
+      "quickCodes": [
+        "m1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "夕",
+      "fullCodes": [
+        "m"
+      ],
+      "quickCodes": [
+        "m2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "貼",
+      "fullCodes": [
+        "me;"
+      ],
+      "quickCodes": [
+        "m3",
+        "me0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "財",
+      "fullCodes": [
+        "mfl"
+      ],
+      "quickCodes": [
+        "m4",
+        "mf9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "夠",
+      "fullCodes": [
+        "l;mm",
+        "mml;"
+      ],
+      "quickCodes": [
+        "m5",
+        "mm9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "賠",
+      "fullCodes": [
+        "my;"
+      ],
+      "quickCodes": [
+        "m6",
+        "my0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "體",
+      "fullCodes": [
+        "mupi"
+      ],
+      "quickCodes": [
+        "m7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "贈",
+      "fullCodes": [
+        "mk/p",
+        "mkpp"
+      ],
+      "quickCodes": [
+        "m8",
+        "mk0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "然",
+      "fullCodes": [
+        "mzh,"
+      ],
+      "quickCodes": [
+        "m9",
+        "mz6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "過",
+      "fullCodes": [
+        "m;n"
+      ],
+      "quickCodes": [
+        "m0",
+        "m;6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "之",
+      "fullCodes": [
+        "n"
+      ],
+      "quickCodes": [
+        "n1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "心",
+      "fullCodes": [
+        "n"
+      ],
+      "quickCodes": [
+        "n2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "定",
+      "fullCodes": [
+        "nac"
+      ],
+      "quickCodes": [
+        "n3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "麼",
+      "fullCodes": [
+        "nvvx"
+      ],
+      "quickCodes": [
+        "n4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "字",
+      "fullCodes": [
+        "ngf"
+      ],
+      "quickCodes": [
+        "n5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "忙",
+      "fullCodes": [
+        "nys"
+      ],
+      "quickCodes": [
+        "n6",
+        "ny2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "家",
+      "fullCodes": [
+        "na."
+      ],
+      "quickCodes": [
+        "n7"
+      ],
+      "specialCodes": [
+        "na"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "應",
+      "fullCodes": [
+        "nkkn"
+      ],
+      "quickCodes": [
+        "n8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "寫",
+      "fullCodes": [
+        "nol,"
+      ],
+      "quickCodes": [
+        "n9",
+        "no9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "空",
+      "fullCodes": [
+        "nkq"
+      ],
+      "quickCodes": [
+        "n0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "手",
+      "fullCodes": [
+        "o"
+      ],
+      "quickCodes": [
+        "o1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "斤",
+      "fullCodes": [
+        "o"
+      ],
+      "quickCodes": [
+        "o2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "臼",
+      "fullCodes": [
+        "o"
+      ],
+      "quickCodes": [
+        "o3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "無",
+      "fullCodes": [
+        "or,"
+      ],
+      "quickCodes": [
+        "o4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "把",
+      "fullCodes": [
+        "otds"
+      ],
+      "quickCodes": [
+        "o5",
+        "ot3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "接",
+      "fullCodes": [
+        "oyw"
+      ],
+      "quickCodes": [
+        "o6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "興",
+      "fullCodes": [
+        "ojqk"
+      ],
+      "quickCodes": [
+        "o7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "推",
+      "fullCodes": [
+        "oky"
+      ],
+      "quickCodes": [
+        "o8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "學",
+      "fullCodes": [
+        "o..f"
+      ],
+      "quickCodes": [
+        "o9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "動",
+      "fullCodes": [
+        "opb"
+      ],
+      "quickCodes": [
+        "o0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "日",
+      "fullCodes": [
+        "p"
+      ],
+      "quickCodes": [
+        "p1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "曰",
+      "fullCodes": [
+        "p"
+      ],
+      "quickCodes": [
+        "p2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "田",
+      "fullCodes": [
+        "p"
+      ],
+      "quickCodes": [
+        "p3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "時",
+      "fullCodes": [
+        "prfh"
+      ],
+      "quickCodes": [
+        "p4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "最",
+      "fullCodes": [
+        "paeb"
+      ],
+      "quickCodes": [
+        "p5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "是",
+      "fullCodes": [
+        "pac"
+      ],
+      "quickCodes": [
+        "p6"
+      ],
+      "specialCodes": [
+        "pc"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "照",
+      "fullCodes": [
+        "pj;,"
+      ],
+      "quickCodes": [
+        "p7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "點",
+      "fullCodes": [
+        "p,e;"
+      ],
+      "quickCodes": [
+        "p8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "易",
+      "fullCodes": [
+        "pl."
+      ],
+      "quickCodes": [
+        "p9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "國",
+      "fullCodes": [
+        "pqax"
+      ],
+      "quickCodes": [
+        "p0",
+        "pq1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "工",
+      "fullCodes": [
+        "q"
+      ],
+      "quickCodes": [
+        "q1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "七",
+      "fullCodes": [
+        "q"
+      ],
+      "quickCodes": [
+        "q2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "車",
+      "fullCodes": [
+        "q"
+      ],
+      "quickCodes": [
+        "q3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "哥",
+      "fullCodes": [
+        "qdqd"
+      ],
+      "quickCodes": [
+        "q4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "事",
+      "fullCodes": [
+        "qtd"
+      ],
+      "quickCodes": [
+        "q5",
+        "qt3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "較",
+      "fullCodes": [
+        "qyk."
+      ],
+      "quickCodes": [
+        "q6",
+        "qy8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "敢",
+      "fullCodes": [
+        "qe.",
+        "te."
+      ],
+      "quickCodes": [
+        "q7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "頭",
+      "fullCodes": [
+        "qiam"
+      ],
+      "quickCodes": [
+        "q8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "或",
+      "fullCodes": [
+        "qax"
+      ],
+      "quickCodes": [
+        "q9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "區",
+      "fullCodes": [
+        "q;;;"
+      ],
+      "quickCodes": [
+        "q0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "土",
+      "fullCodes": [
+        "r"
+      ],
+      "quickCodes": [
+        "r1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "士",
+      "fullCodes": [
+        "r"
+      ],
+      "quickCodes": [
+        "r2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "廿",
+      "fullCodes": [
+        "r"
+      ],
+      "quickCodes": [
+        "r3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "起",
+      "fullCodes": [
+        "rcts"
+      ],
+      "quickCodes": [
+        "r4",
+        "rc5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "地",
+      "fullCodes": [
+        "rgds"
+      ],
+      "quickCodes": [
+        "r5",
+        "rg3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "老",
+      "fullCodes": [
+        "rlq"
+      ],
+      "quickCodes": [
+        "r6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "帶",
+      "fullCodes": [
+        "rjjd"
+      ],
+      "quickCodes": [
+        "r7",
+        "rj7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "報",
+      "fullCodes": [
+        "rifb"
+      ],
+      "quickCodes": [
+        "r8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "都",
+      "fullCodes": [
+        "rlpt"
+      ],
+      "quickCodes": [
+        "r9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "臺",
+      "fullCodes": [
+        "r;jr"
+      ],
+      "quickCodes": [
+        "r0",
+        "r;7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "乙",
+      "fullCodes": [
+        "s"
+      ],
+      "quickCodes": [
+        "s1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "鄉",
+      "fullCodes": [
+        "sxht",
+        "xhbt",
+        "xhtt"
+      ],
+      "quickCodes": [
+        "s2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "收",
+      "fullCodes": [
+        "sd."
+      ],
+      "quickCodes": [
+        "s3",
+        "sd9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "跳",
+      "fullCodes": [
+        "ss,"
+      ],
+      "quickCodes": [
+        "s4",
+        "ss8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "跟",
+      "fullCodes": [
+        "stx"
+      ],
+      "quickCodes": [
+        "s5",
+        "st2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "響",
+      "fullCodes": [
+        "sxhp",
+        "xhbp",
+        "xhtp"
+      ],
+      "quickCodes": [
+        "s6",
+        "sx6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "逃",
+      "fullCodes": [
+        "s,n"
+      ],
+      "quickCodes": [
+        "s7",
+        "s,6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "飛",
+      "fullCodes": [
+        "skld",
+        "skle",
+        "sklk"
+      ],
+      "quickCodes": [
+        "s8",
+        "sk9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "路",
+      "fullCodes": [
+        "s.;"
+      ],
+      "quickCodes": [
+        "s9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "踢",
+      "fullCodes": [
+        "spl."
+      ],
+      "quickCodes": [
+        "s0",
+        "sp9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "隨",
+      "fullCodes": [
+        "tzqn"
+      ],
+      "quickCodes": [
+        "t1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "民",
+      "fullCodes": [
+        "tsas"
+      ],
+      "quickCodes": [
+        "t2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "巴",
+      "fullCodes": [
+        "tds"
+      ],
+      "quickCodes": [
+        "t3",
+        "td2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "書",
+      "fullCodes": [
+        "tfp",
+        "trp"
+      ],
+      "quickCodes": [
+        "t4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "張",
+      "fullCodes": [
+        "tgqx"
+      ],
+      "quickCodes": [
+        "t5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "院",
+      "fullCodes": [
+        "tnas"
+      ],
+      "quickCodes": [
+        "t6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "強",
+      "fullCodes": [
+        "tg;/",
+        "tgx/"
+      ],
+      "quickCodes": [
+        "t7",
+        "tg2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "除",
+      "fullCodes": [
+        "tiv"
+      ],
+      "quickCodes": [
+        "t8",
+        "ti4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "群",
+      "fullCodes": [
+        "tl;f"
+      ],
+      "quickCodes": [
+        "t9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "陽",
+      "fullCodes": [
+        "tpa."
+      ],
+      "quickCodes": [
+        "t0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "月",
+      "fullCodes": [
+        "u"
+      ],
+      "quickCodes": [
+        "u1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "皿",
+      "fullCodes": [
+        "u"
+      ],
+      "quickCodes": [
+        "u2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "縣",
+      "fullCodes": [
+        "uac",
+        "jscx",
+        "uacx"
+      ],
+      "quickCodes": [
+        "u3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "腦",
+      "fullCodes": [
+        "uwl.",
+        "uwlh",
+        "uwlm",
+        "uwyd"
+      ],
+      "quickCodes": [
+        "u4",
+        "uw9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "助",
+      "fullCodes": [
+        "uab"
+      ],
+      "quickCodes": [
+        "u5",
+        "ua5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "臉",
+      "fullCodes": [
+        "ui;k"
+      ],
+      "quickCodes": [
+        "u6",
+        "ui0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "服",
+      "fullCodes": [
+        "ujb"
+      ],
+      "quickCodes": [
+        "u7",
+        "uj5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "勝",
+      "fullCodes": [
+        "uizb",
+        "ukzb"
+      ],
+      "quickCodes": [
+        "u8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "胞",
+      "fullCodes": [
+        "ults"
+      ],
+      "quickCodes": [
+        "u9",
+        "ul5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "腳",
+      "fullCodes": [
+        "ukkj"
+      ],
+      "quickCodes": [
+        "u0",
+        "uk8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "木",
+      "fullCodes": [
+        "v"
+      ],
+      "quickCodes": [
+        "v1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "機",
+      "fullCodes": [
+        "vxxx"
+      ],
+      "quickCodes": [
+        "v2",
+        "vx2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "極",
+      "fullCodes": [
+        "vaga",
+        "vgda"
+      ],
+      "quickCodes": [
+        "v3",
+        "va5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "村",
+      "fullCodes": [
+        "vfh"
+      ],
+      "quickCodes": [
+        "v4",
+        "vf6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "根",
+      "fullCodes": [
+        "vtx"
+      ],
+      "quickCodes": [
+        "v5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "校",
+      "fullCodes": [
+        "vyk."
+      ],
+      "quickCodes": [
+        "v6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "想",
+      "fullCodes": [
+        "vjn"
+      ],
+      "quickCodes": [
+        "v7",
+        "vj6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "來",
+      "fullCodes": [
+        "vkk"
+      ],
+      "quickCodes": [
+        "v8",
+        "vk8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "格",
+      "fullCodes": [
+        "v.;"
+      ],
+      "quickCodes": [
+        "v9",
+        "v.0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "查",
+      "fullCodes": [
+        "vpa"
+      ],
+      "quickCodes": [
+        "v0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "女",
+      "fullCodes": [
+        "w"
+      ],
+      "quickCodes": [
+        "w1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "風",
+      "fullCodes": [
+        "x"
+      ],
+      "quickCodes": [
+        "x1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "幾",
+      "fullCodes": [
+        "xxax",
+        "xxzx"
+      ],
+      "quickCodes": [
+        "x2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "經",
+      "fullCodes": [
+        "xawq"
+      ],
+      "quickCodes": [
+        "x3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "結",
+      "fullCodes": [
+        "xr;"
+      ],
+      "quickCodes": [
+        "x4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "級",
+      "fullCodes": [
+        "xgk",
+        "xlb"
+      ],
+      "quickCodes": [
+        "x5",
+        "xl5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "將",
+      "fullCodes": [
+        "x.fh",
+        "xmfh"
+      ],
+      "quickCodes": [
+        "x6",
+        "xm4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "能",
+      "fullCodes": [
+        "xuqq"
+      ],
+      "quickCodes": [
+        "x7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "給",
+      "fullCodes": [
+        "xi;"
+      ],
+      "quickCodes": [
+        "x8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "總",
+      "fullCodes": [
+        "xlpn"
+      ],
+      "quickCodes": [
+        "x9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "約",
+      "fullCodes": [
+        "xlh"
+      ],
+      "quickCodes": [
+        "x0",
+        "xl6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "立",
+      "fullCodes": [
+        "y"
+      ],
+      "quickCodes": [
+        "y1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "言",
+      "fullCodes": [
+        "y"
+      ],
+      "quickCodes": [
+        "y2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "裡",
+      "fullCodes": [
+        "ykpr"
+      ],
+      "quickCodes": [
+        "y3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "新",
+      "fullCodes": [
+        "yvo"
+      ],
+      "quickCodes": [
+        "y4",
+        "yv9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "記",
+      "fullCodes": [
+        "yts"
+      ],
+      "quickCodes": [
+        "y5",
+        "yt2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "該",
+      "fullCodes": [
+        "yyxk"
+      ],
+      "quickCodes": [
+        "y6",
+        "yy2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "認",
+      "fullCodes": [
+        "yjhn"
+      ],
+      "quickCodes": [
+        "y7",
+        "yj6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "說",
+      "fullCodes": [
+        "yk;s"
+      ],
+      "quickCodes": [
+        "y8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "話",
+      "fullCodes": [
+        "yaf;",
+        "ylf;"
+      ],
+      "quickCodes": [
+        "y9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "就",
+      "fullCodes": [
+        "y;ch"
+      ],
+      "quickCodes": [
+        "y0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "不",
+      "fullCodes": [
+        "z"
+      ],
+      "quickCodes": [
+        "z1"
+      ],
+      "specialCodes": [
+        "ah"
+      ],
+      "tier": 1
+    },
+    {
+      "char": "大",
+      "fullCodes": [
+        "z"
+      ],
+      "quickCodes": [
+        "z2"
+      ],
+      "specialCodes": [
+        "ak"
+      ],
+      "tier": 1
+    },
+    {
+      "char": "夫",
+      "fullCodes": [
+        "z"
+      ],
+      "quickCodes": [
+        "z3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "雨",
+      "fullCodes": [
+        "z"
+      ],
+      "quickCodes": [
+        "z4"
+      ],
+      "specialCodes": [
+        "a,"
+      ],
+      "tier": 1
+    },
+    {
+      "char": "成",
+      "fullCodes": [
+        "zgx"
+      ],
+      "quickCodes": [
+        "z5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "在",
+      "fullCodes": [
+        "zdr"
+      ],
+      "quickCodes": [
+        "z6",
+        "zd4"
+      ],
+      "specialCodes": [
+        "dr"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "布",
+      "fullCodes": [
+        "zjd"
+      ],
+      "quickCodes": [
+        "z7",
+        "zj3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "願",
+      "fullCodes": [
+        "zlpm"
+      ],
+      "quickCodes": [
+        "z8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "原",
+      "fullCodes": [
+        "zlpc"
+      ],
+      "quickCodes": [
+        "z9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "電",
+      "fullCodes": [
+        "zps"
+      ],
+      "quickCodes": [
+        "z0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "炎",
+      "fullCodes": [
+        ",,"
+      ],
+      "quickCodes": [
+        ",,1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "榮",
+      "fullCodes": [
+        ",,jv"
+      ],
+      "quickCodes": [
+        ",,7"
+      ],
+      "specialCodes": [
+        "jv"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "敝",
+      "fullCodes": [
+        ",."
+      ],
+      "quickCodes": [
+        ",.1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "敉",
+      "fullCodes": [
+        ",."
+      ],
+      "quickCodes": [
+        ",.2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "弊",
+      "fullCodes": [
+        ",.f"
+      ],
+      "quickCodes": [
+        ",.4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "彆",
+      "fullCodes": [
+        ",.tg"
+      ],
+      "quickCodes": [
+        ",.5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "幣",
+      "fullCodes": [
+        ",.jd"
+      ],
+      "quickCodes": [
+        ",.7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "烙",
+      "fullCodes": [
+        ",.;"
+      ],
+      "quickCodes": [
+        ",.0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "燭",
+      "fullCodes": [
+        ",/l/"
+      ],
+      "quickCodes": [
+        ",/9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "燥",
+      "fullCodes": [
+        ",;;v"
+      ],
+      "quickCodes": [
+        ",;0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "炳",
+      "fullCodes": [
+        ",ajk"
+      ],
+      "quickCodes": [
+        ",a7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "煩",
+      "fullCodes": [
+        ",alm"
+      ],
+      "quickCodes": [
+        ",a9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "煙",
+      "fullCodes": [
+        ",a/r"
+      ],
+      "quickCodes": [
+        ",a0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "炒",
+      "fullCodes": [
+        ",cl"
+      ],
+      "quickCodes": [
+        ",c9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "爛",
+      "fullCodes": [
+        ",ev/"
+      ],
+      "quickCodes": [
+        ",e4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "煆",
+      "fullCodes": [
+        ",etb"
+      ],
+      "quickCodes": [
+        ",e5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "燜",
+      "fullCodes": [
+        ",en"
+      ],
+      "quickCodes": [
+        ",e6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "燦",
+      "fullCodes": [
+        ",em,"
+      ],
+      "quickCodes": [
+        ",e7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "爐",
+      "fullCodes": [
+        ",epu"
+      ],
+      "quickCodes": [
+        ",e0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "籵",
+      "fullCodes": [
+        ",f"
+      ],
+      "quickCodes": [
+        ",f1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "糊",
+      "fullCodes": [
+        ",f;u"
+      ],
+      "quickCodes": [
+        ",f0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "籽",
+      "fullCodes": [
+        ",gf"
+      ],
+      "quickCodes": [
+        ",g4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "煽",
+      "fullCodes": [
+        ",gbb"
+      ],
+      "quickCodes": [
+        ",g5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "糕",
+      "fullCodes": [
+        ",ir,"
+      ],
+      "quickCodes": [
+        ",i4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "燧",
+      "fullCodes": [
+        ",i.n"
+      ],
+      "quickCodes": [
+        ",i9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "燴",
+      "fullCodes": [
+        ",i/p"
+      ],
+      "quickCodes": [
+        ",i0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "灱",
+      "fullCodes": [
+        ",j"
+      ],
+      "quickCodes": [
+        ",j1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "煥",
+      "fullCodes": [
+        ",jjz"
+      ],
+      "quickCodes": [
+        ",j7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "炊",
+      "fullCodes": [
+        ",jk"
+      ],
+      "quickCodes": [
+        ",j8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "焰",
+      "fullCodes": [
+        ",jo"
+      ],
+      "quickCodes": [
+        ",j9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "炯",
+      "fullCodes": [
+        ",j;"
+      ],
+      "quickCodes": [
+        ",j0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "粉",
+      "fullCodes": [
+        ",kj"
+      ],
+      "quickCodes": [
+        ",k7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "炮",
+      "fullCodes": [
+        ",lts"
+      ],
+      "quickCodes": [
+        ",l5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "灼",
+      "fullCodes": [
+        ",lh"
+      ],
+      "quickCodes": [
+        ",l6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "熄",
+      "fullCodes": [
+        ",ljn"
+      ],
+      "quickCodes": [
+        ",l7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "煌",
+      "fullCodes": [
+        ",lpr"
+      ],
+      "quickCodes": [
+        ",l0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "燃",
+      "fullCodes": [
+        ",mz,"
+      ],
+      "quickCodes": [
+        ",m1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "迷",
+      "fullCodes": [
+        ",n"
+      ],
+      "quickCodes": [
+        ",n1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "糖",
+      "fullCodes": [
+        ",nt;"
+      ],
+      "quickCodes": [
+        ",n5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "熔",
+      "fullCodes": [
+        ",nk;"
+      ],
+      "quickCodes": [
+        ",n8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "炘",
+      "fullCodes": [
+        ",o"
+      ],
+      "quickCodes": [
+        ",o1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "炸",
+      "fullCodes": [
+        ",oe"
+      ],
+      "quickCodes": [
+        ",o3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "燬",
+      "fullCodes": [
+        ",oqb",
+        ",orb"
+      ],
+      "quickCodes": [
+        ",o4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "糙",
+      "fullCodes": [
+        ",o;n"
+      ],
+      "quickCodes": [
+        ",o0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "糧",
+      "fullCodes": [
+        ",par"
+      ],
+      "quickCodes": [
+        ",p1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "爆",
+      "fullCodes": [
+        ",prc"
+      ],
+      "quickCodes": [
+        ",p4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "煜",
+      "fullCodes": [
+        ",py"
+      ],
+      "quickCodes": [
+        ",p6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "灴",
+      "fullCodes": [
+        ",q"
+      ],
+      "quickCodes": [
+        ",q1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "炬",
+      "fullCodes": [
+        ",qt"
+      ],
+      "quickCodes": [
+        ",q5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "糟",
+      "fullCodes": [
+        ",qp"
+      ],
+      "quickCodes": [
+        ",q0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "灶",
+      "fullCodes": [
+        ",r"
+      ],
+      "quickCodes": [
+        ",r1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "燒",
+      "fullCodes": [
+        ",rrs"
+      ],
+      "quickCodes": [
+        ",r4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "烘",
+      "fullCodes": [
+        ",rk"
+      ],
+      "quickCodes": [
+        ",r8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "烤",
+      "fullCodes": [
+        ",rlg"
+      ],
+      "quickCodes": [
+        ",r9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "燼",
+      "fullCodes": [
+        ",tdu",
+        ",tru"
+      ],
+      "quickCodes": [
+        ",t3"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "粗",
+      "fullCodes": [
+        ",ua"
+      ],
+      "quickCodes": [
+        ",u1"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "炑",
+      "fullCodes": [
+        ",v"
+      ],
+      "quickCodes": [
+        ",v1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "煉",
+      "fullCodes": [
+        ",v/"
+      ],
+      "quickCodes": [
+        ",v0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "籹",
+      "fullCodes": [
+        ",w"
+      ],
+      "quickCodes": [
+        ",w1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "糝",
+      "fullCodes": [
+        ",xx."
+      ],
+      "quickCodes": [
+        ",x2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "粒",
+      "fullCodes": [
+        ",y"
+      ],
+      "quickCodes": [
+        ",y1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "炕",
+      "fullCodes": [
+        ",ys"
+      ],
+      "quickCodes": [
+        ",y2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "粹",
+      "fullCodes": [
+        ",ykf"
+      ],
+      "quickCodes": [
+        ",y8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "焙",
+      "fullCodes": [
+        ",y;"
+      ],
+      "quickCodes": [
+        ",y0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "糯",
+      "fullCodes": [
+        ",zae"
+      ],
+      "quickCodes": [
+        ",z1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "燎",
+      "fullCodes": [
+        ",zkc"
+      ],
+      "quickCodes": [
+        ",z8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "狄",
+      "fullCodes": [
+        ".,"
+      ],
+      "quickCodes": [
+        ".,1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "逖",
+      "fullCodes": [
+        ".,n"
+      ],
+      "quickCodes": [
+        ".,6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "爻",
+      "fullCodes": [
+        ".."
+      ],
+      "quickCodes": [
+        "..1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "狐",
+      "fullCodes": [
+        "..xk"
+      ],
+      "quickCodes": [
+        "..2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "循",
+      "fullCodes": [
+        "..fj"
+      ],
+      "quickCodes": [
+        "..4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "猙",
+      "fullCodes": [
+        "..td"
+      ],
+      "quickCodes": [
+        "..5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "貉",
+      "fullCodes": [
+        "..;"
+      ],
+      "quickCodes": [
+        "..0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "玀",
+      "fullCodes": [
+        "./xy"
+      ],
+      "quickCodes": [
+        "./2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "爵",
+      "fullCodes": [
+        "./bh"
+      ],
+      "quickCodes": [
+        "./5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "獨",
+      "fullCodes": [
+        "./l/"
+      ],
+      "quickCodes": [
+        "./9"
+      ],
+      "specialCodes": [
+        "./"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "各",
+      "fullCodes": [
+        ".;"
+      ],
+      "quickCodes": [
+        ".;1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "狷",
+      "fullCodes": [
+        ".;u"
+      ],
+      "quickCodes": [
+        ".;7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "雒",
+      "fullCodes": [
+        ".;ky"
+      ],
+      "quickCodes": [
+        ".;8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "爰",
+      "fullCodes": [
+        ".azb"
+      ],
+      "quickCodes": [
+        ".a1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "徑",
+      "fullCodes": [
+        ".awq"
+      ],
+      "quickCodes": [
+        ".a2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "征",
+      "fullCodes": [
+        ".ae"
+      ],
+      "quickCodes": [
+        ".a3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "狂",
+      "fullCodes": [
+        ".ar"
+      ],
+      "quickCodes": [
+        ".a4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "衙",
+      "fullCodes": [
+        ".atd"
+      ],
+      "quickCodes": [
+        ".a5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "須",
+      "fullCodes": [
+        ".alm"
+      ],
+      "quickCodes": [
+        ".a9"
+      ],
+      "specialCodes": [
+        ".a"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "亂",
+      "fullCodes": [
+        ".bjs",
+        ".bms"
+      ],
+      "quickCodes": [
+        ".b7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "衍",
+      "fullCodes": [
+        ".cad"
+      ],
+      "quickCodes": [
+        ".c1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "躺",
+      "fullCodes": [
+        ".cj;"
+      ],
+      "quickCodes": [
+        ".c7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "凶",
+      "fullCodes": [
+        ".d"
+      ],
+      "quickCodes": [
+        ".d1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "兇",
+      "fullCodes": [
+        ".ds"
+      ],
+      "quickCodes": [
+        ".d2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "爬",
+      "fullCodes": [
+        ".dks"
+      ],
+      "quickCodes": [
+        ".d8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "刈",
+      "fullCodes": [
+        ".e"
+      ],
+      "quickCodes": [
+        ".e1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "遞",
+      "fullCodes": [
+        ".esn"
+      ],
+      "quickCodes": [
+        ".e2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "徙",
+      "fullCodes": [
+        ".ec"
+      ],
+      "quickCodes": [
+        ".e3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "夆",
+      "fullCodes": [
+        ".f"
+      ],
+      "quickCodes": [
+        ".f1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "射",
+      "fullCodes": [
+        ".fh"
+      ],
+      "quickCodes": [
+        ".f6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "盾",
+      "fullCodes": [
+        ".fj"
+      ],
+      "quickCodes": [
+        ".f7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "獲",
+      "fullCodes": [
+        ".fkb",
+        "f.kb"
+      ],
+      "quickCodes": [
+        ".f8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "豺",
+      "fullCodes": [
+        ".fl"
+      ],
+      "quickCodes": [
+        ".f9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "德",
+      "fullCodes": [
+        ".f/n"
+      ],
+      "quickCodes": [
+        ".f0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "犯",
+      "fullCodes": [
+        ".gs"
+      ],
+      "quickCodes": [
+        ".g2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "猛",
+      "fullCodes": [
+        ".gfu"
+      ],
+      "quickCodes": [
+        ".g4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "冬",
+      "fullCodes": [
+        ".h"
+      ],
+      "quickCodes": [
+        ".h1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "彷",
+      "fullCodes": [
+        ".h"
+      ],
+      "quickCodes": [
+        ".h2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "狼",
+      "fullCodes": [
+        ".htx"
+      ],
+      "quickCodes": [
+        ".h5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "銜",
+      "fullCodes": [
+        ".iad"
+      ],
+      "quickCodes": [
+        ".i1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "徐",
+      "fullCodes": [
+        ".iv"
+      ],
+      "quickCodes": [
+        ".i4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "猶",
+      "fullCodes": [
+        ".ip"
+      ],
+      "quickCodes": [
+        ".i0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "覓",
+      "fullCodes": [
+        ".js"
+      ],
+      "quickCodes": [
+        ".j2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "列",
+      "fullCodes": [
+        "ame"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "輸",
+      "fullCodes": [
+        "qiue",
+        "qiuw"
+      ],
+      "quickCodes": [
+        "qi7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "性",
+      "fullCodes": [
+        "nor"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "nn"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "望",
+      "fullCodes": [
+        "ysmr",
+        "ysur"
+      ],
+      "quickCodes": [
+        "ys7"
+      ],
+      "specialCodes": [
+        "sr"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "早",
+      "fullCodes": [
+        "pf"
+      ],
+      "quickCodes": [
+        "pf2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "安",
+      "fullCodes": [
+        "nw"
+      ],
+      "quickCodes": [
+        "nw1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "晚",
+      "fullCodes": [
+        "pj;s",
+        "pjps"
+      ],
+      "quickCodes": [
+        "pj0"
+      ],
+      "specialCodes": [
+        "sj"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "謝",
+      "fullCodes": [
+        "y.fh"
+      ],
+      "quickCodes": [
+        "y.4"
+      ],
+      "specialCodes": [
+        "hy"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "請",
+      "fullCodes": [
+        "yru"
+      ],
+      "quickCodes": [
+        "yr7"
+      ],
+      "specialCodes": [
+        "yu"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "問",
+      "fullCodes": [
+        "e;"
+      ],
+      "quickCodes": [
+        "e;1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "再",
+      "fullCodes": [
+        "ajr"
+      ],
+      "quickCodes": [
+        "aj4"
+      ],
+      "specialCodes": [
+        "jj"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "見",
+      "fullCodes": [
+        "js"
+      ],
+      "quickCodes": [
+        "js1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "今",
+      "fullCodes": [
+        "khg"
+      ],
+      "quickCodes": [
+        "ig1"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "天",
+      "fullCodes": [
+        "az"
+      ],
+      "quickCodes": [
+        "az1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "明",
+      "fullCodes": [
+        "pu"
+      ],
+      "quickCodes": [
+        "pu1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "昨",
+      "fullCodes": [
+        "poe"
+      ],
+      "quickCodes": [
+        "po3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "間",
+      "fullCodes": [
+        "ep"
+      ],
+      "quickCodes": [
+        "ep1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "氣",
+      "fullCodes": [
+        "o,"
+      ],
+      "quickCodes": [
+        "o,1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "下",
+      "fullCodes": [
+        "ac"
+      ],
+      "quickCodes": [
+        "ac1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "晴",
+      "fullCodes": [
+        "pru"
+      ],
+      "quickCodes": [
+        "pr7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "回",
+      "fullCodes": [
+        "p;"
+      ],
+      "quickCodes": [
+        "p;1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "上",
+      "fullCodes": [
+        "ea"
+      ],
+      "quickCodes": [
+        "ea1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "班",
+      "fullCodes": [
+        "arhr"
+      ],
+      "quickCodes": [
+        "ar6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "練",
+      "fullCodes": [
+        "xv/",
+        "xvp"
+      ],
+      "quickCodes": [
+        "xv0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "中",
+      "fullCodes": [
+        ";d"
+      ],
+      "quickCodes": [
+        ";d1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "文",
+      "fullCodes": [
+        "y."
+      ],
+      "quickCodes": [
+        "y.1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "打",
+      "fullCodes": [
+        "oad"
+      ],
+      "quickCodes": [
+        "oa3"
+      ],
+      "specialCodes": [
+        "/d"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "順",
+      "fullCodes": [
+        "dddm",
+        "edam"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "利",
+      "fullCodes": [
+        "lve"
+      ],
+      "quickCodes": [
+        "lv3"
+      ],
+      "specialCodes": [
+        "le"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "生",
+      "fullCodes": [
+        "or"
+      ],
+      "quickCodes": [
+        "or1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "活",
+      "fullCodes": [
+        "caf;",
+        "clf;"
+      ],
+      "quickCodes": [
+        "cl4"
+      ],
+      "specialCodes": [
+        "fc"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "週",
+      "fullCodes": [
+        "jf;n",
+        "jr;n"
+      ],
+      "quickCodes": [
+        "jr0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "末",
+      "fullCodes": [
+        "va"
+      ],
+      "quickCodes": [
+        "va2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "愉",
+      "fullCodes": [
+        "niue",
+        "niuw"
+      ],
+      "quickCodes": [
+        "ni7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "快",
+      "fullCodes": [
+        "ntk"
+      ],
+      "quickCodes": [
+        "nt8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "平",
+      "fullCodes": [
+        "ai"
+      ],
+      "quickCodes": [
+        "ai1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "健",
+      "fullCodes": [
+        "ktfb"
+      ],
+      "quickCodes": [
+        "kt4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "康",
+      "fullCodes": [
+        "ntc"
+      ],
+      "quickCodes": [
+        "nt3"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "情",
+      "fullCodes": [
+        "nru"
+      ],
+      "quickCodes": [
+        "nr7"
+      ],
+      "specialCodes": [
+        "nu"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "好",
+      "fullCodes": [
+        "wgf"
+      ],
+      "quickCodes": [
+        "wg4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "慢",
+      "fullCodes": [
+        "np/b"
+      ],
+      "quickCodes": [
+        "np0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "專",
+      "fullCodes": [
+        "zfh"
+      ],
+      "quickCodes": [
+        "zf6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "熟",
+      "fullCodes": [
+        "y;g,"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "y,"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "巧",
+      "fullCodes": [
+        "qag"
+      ],
+      "quickCodes": [
+        "qa5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "始",
+      "fullCodes": [
+        "wx;"
+      ],
+      "quickCodes": [
+        "wx0"
+      ],
+      "specialCodes": [
+        "wx"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "保",
+      "fullCodes": [
+        "k;v"
+      ],
+      "quickCodes": [
+        "k;4"
+      ],
+      "specialCodes": [
+        "tv"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "持",
+      "fullCodes": [
+        "orfh"
+      ],
+      "quickCodes": [
+        "or4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "節",
+      "fullCodes": [
+        "lbj",
+        "llpj"
+      ],
+      "quickCodes": [
+        "lb7"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "奏",
+      "fullCodes": [
+        "zaz",
+        "zlz"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "讀",
+      "fullCodes": [
+        "yr/m"
+      ],
+      "quickCodes": [
+        "yr0"
+      ],
+      "specialCodes": [
+        "y/"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "章",
+      "fullCodes": [
+        "ypf"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "uf"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "整",
+      "fullCodes": [
+        "v;.e"
+      ],
+      "quickCodes": [
+        "v;9"
+      ],
+      "specialCodes": [
+        "vt"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "理",
+      "fullCodes": [
+        "arpr"
+      ],
+      "quickCodes": [
+        "ar0"
+      ],
+      "specialCodes": [
+        "mi"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "資",
+      "fullCodes": [
+        "aajm",
+        "kjkm"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "km"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "完",
+      "fullCodes": [
+        "naas"
+      ],
+      "quickCodes": [
+        "na1"
+      ],
+      "specialCodes": [
+        "wt"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "任",
+      "fullCodes": [
+        "kar",
+        "klr"
+      ],
+      "quickCodes": [
+        "ka4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "題",
+      "fullCodes": [
+        "pacm"
+      ],
+      "quickCodes": [
+        "pa3"
+      ],
+      "specialCodes": [
+        "mp"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "分",
+      "fullCodes": [
+        "kj"
+      ],
+      "quickCodes": [
+        "kj1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "享",
+      "fullCodes": [
+        "y;gf"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "y;"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "思",
+      "fullCodes": [
+        "pn"
+      ],
+      "quickCodes": [
+        "pn1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "考",
+      "fullCodes": [
+        "rlag"
+      ],
+      "quickCodes": [
+        "rl1"
+      ],
+      "specialCodes": [
+        "la"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "仔",
+      "fullCodes": [
+        "kgf"
+      ],
+      "quickCodes": [
+        "kg4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "細",
+      "fullCodes": [
+        "xp"
+      ],
+      "quickCodes": [
+        "xp1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "檢",
+      "fullCodes": [
+        "vi;k"
+      ],
+      "quickCodes": [
+        "vi0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "意",
+      "fullCodes": [
+        "ypn"
+      ],
+      "quickCodes": [
+        "yp6"
+      ],
+      "specialCodes": [
+        "/i"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "全",
+      "fullCodes": [
+        "ir"
+      ],
+      "quickCodes": [
+        "ir1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "歡",
+      "fullCodes": [
+        "f;;k"
+      ],
+      "quickCodes": [
+        "f;0"
+      ],
+      "specialCodes": [
+        "fw"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "迎",
+      "fullCodes": [
+        "ojn"
+      ],
+      "quickCodes": [
+        "oj6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "準",
+      "fullCodes": [
+        "ckyf"
+      ],
+      "quickCodes": [
+        "ck6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "備",
+      "fullCodes": [
+        "krlf"
+      ],
+      "quickCodes": [
+        "kr9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "了",
+      "fullCodes": [
+        "gd"
+      ],
+      "quickCodes": [
+        "gd1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "休",
+      "fullCodes": [
+        "kv"
+      ],
+      "quickCodes": [
+        "kv1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "息",
+      "fullCodes": [
+        "ljn"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "jn"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "喝",
+      "fullCodes": [
+        ";plq",
+        ";pls"
+      ],
+      "quickCodes": [
+        ";p9"
+      ],
+      "specialCodes": [
+        "pl"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "杯",
+      "fullCodes": [
+        "vz"
+      ],
+      "quickCodes": [
+        "vz1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "熱",
+      "fullCodes": [
+        "rkr,"
+      ],
+      "quickCodes": [
+        "rk4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "茶",
+      "fullCodes": [
+        "fic",
+        "fkv"
+      ],
+      "quickCodes": [
+        "fk4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "飯",
+      "fullCodes": [
+        "ib.b",
+        "ibzb"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "bz"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "睡",
+      "fullCodes": [
+        "jof"
+      ],
+      "quickCodes": [
+        "jo4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "覺",
+      "fullCodes": [
+        "o..s"
+      ],
+      "quickCodes": [
+        "o.9"
+      ],
+      "specialCodes": [
+        "ma"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "出",
+      "fullCodes": [
+        "dd"
+      ],
+      "quickCodes": [
+        "dd1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "走",
+      "fullCodes": [
+        "rc"
+      ],
+      "quickCodes": [
+        "rc1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "搭",
+      "fullCodes": [
+        "ofi;"
+      ],
+      "quickCodes": [
+        "of8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "加",
+      "fullCodes": [
+        "b;"
+      ],
+      "quickCodes": [
+        "b;1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "油",
+      "fullCodes": [
+        "cpf"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "每",
+      "fullCodes": [
+        "osz"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "so"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "步",
+      "fullCodes": [
+        "ec"
+      ],
+      "quickCodes": [
+        "ec1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "碼",
+      "fullCodes": [
+        "gg,"
+      ],
+      "quickCodes": [
+        "gg8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "子",
+      "fullCodes": [
+        "gf"
+      ],
+      "quickCodes": [
+        "gf1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "郵",
+      "fullCodes": [
+        "oft"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "件",
+      "fullCodes": [
+        "kof"
+      ],
+      "quickCodes": [
+        "ko4"
+      ],
+      "specialCodes": [
+        "gw"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "網",
+      "fullCodes": [
+        "xjis"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "ji"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "連",
+      "fullCodes": [
+        "qn"
+      ],
+      "quickCodes": [
+        "qn1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "線",
+      "fullCodes": [
+        "xlpc"
+      ],
+      "quickCodes": [
+        "xl0"
+      ],
+      "specialCodes": [
+        "qw"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "鍵",
+      "fullCodes": [
+        "itfb"
+      ],
+      "quickCodes": [
+        "it4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "盤",
+      "fullCodes": [
+        "lmsu"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "su"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "位",
+      "fullCodes": [
+        "ky"
+      ],
+      "quickCodes": [
+        "ky1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "置",
+      "fullCodes": [
+        "/fjs",
+        "/fua"
+      ],
+      "quickCodes": [
+        "/f7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "拆",
+      "fullCodes": [
+        "ooh"
+      ],
+      "quickCodes": [
+        "oo6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "用",
+      "fullCodes": [
+        "jf"
+      ],
+      "quickCodes": [
+        "jf1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "正",
+      "fullCodes": [
+        "ae"
+      ],
+      "quickCodes": [
+        "ae1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "確",
+      "fullCodes": [
+        "gjky"
+      ],
+      "quickCodes": [
+        "gj8"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "案",
+      "fullCodes": [
+        "nwv"
+      ],
+      "quickCodes": [
+        "nw4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "顯",
+      "fullCodes": [
+        "pxxm"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "示",
+      "fullCodes": [
+        "aac"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "提",
+      "fullCodes": [
+        "opac"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "to"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "隱",
+      "fullCodes": [
+        "t.qn"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "藏",
+      "fullCodes": [
+        "faxx",
+        "fxax",
+        "fzsx"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "設",
+      "fullCodes": [
+        "ysb"
+      ],
+      "quickCodes": [
+        "ys5"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "儲",
+      "fullCodes": [
+        "kyrh",
+        "kyrp"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "存",
+      "fullCodes": [
+        "zdgf"
+      ],
+      "quickCodes": [
+        "zd5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "度",
+      "fullCodes": [
+        "nrb"
+      ],
+      "quickCodes": [
+        "nr5"
+      ],
+      "specialCodes": [
+        "nb"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "錯",
+      "fullCodes": [
+        "irp"
+      ],
+      "quickCodes": [
+        "ir0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "複",
+      "fullCodes": [
+        "yko."
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "速",
+      "fullCodes": [
+        "v;n"
+      ],
+      "quickCodes": [
+        "v;6"
+      ],
+      "specialCodes": [
+        "uv"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "挑",
+      "fullCodes": [
+        "os,"
+      ],
+      "quickCodes": [
+        "os8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "戰",
+      "fullCodes": [
+        ";;px"
+      ],
+      "quickCodes": [
+        ";;0"
+      ],
+      "specialCodes": [
+        ";w"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "反",
+      "fullCodes": [
+        ".b"
+      ],
+      "quickCodes": [
+        "zb2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "基",
+      "fullCodes": [
+        "rakr"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "ge"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "本",
+      "fullCodes": [
+        "va"
+      ],
+      "quickCodes": [
+        "va1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "筆",
+      "fullCodes": [
+        "ltf"
+      ],
+      "quickCodes": [
+        "lt4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "形",
+      "fullCodes": [
+        "af."
+      ],
+      "quickCodes": [
+        "af9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "座",
+      "fullCodes": [
+        "nkkr"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "標",
+      "fullCodes": [
+        "va/c"
+      ],
+      "quickCodes": [
+        "va0"
+      ],
+      "specialCodes": [
+        "b/"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "繁",
+      "fullCodes": [
+        "osfx",
+        "oszx"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "sx"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "系",
+      "fullCodes": [
+        "lx"
+      ],
+      "quickCodes": [
+        "lx1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "統",
+      "fullCodes": [
+        "xzs",
+        "xyxs"
+      ],
+      "quickCodes": [
+        "xz2"
+      ],
+      "specialCodes": [
+        "/t"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "台",
+      "fullCodes": [
+        "x;"
+      ],
+      "quickCodes": [
+        "x;1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "灣",
+      "fullCodes": [
+        "cxyg",
+        "cyxg"
+      ],
+      "quickCodes": [
+        "cy2"
+      ],
+      "specialCodes": [
+        "/g"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "化",
+      "fullCodes": [
+        "kq"
+      ],
+      "quickCodes": [
+        "kq1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "城",
+      "fullCodes": [
+        "rzgx"
+      ],
+      "quickCodes": [
+        "rz5"
+      ],
+      "specialCodes": [
+        "rg"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "市",
+      "fullCodes": [
+        "yjd"
+      ],
+      "quickCodes": [
+        "yj3"
+      ],
+      "specialCodes": [
+        "xd"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "散",
+      "fullCodes": [
+        "ru."
+      ],
+      "quickCodes": [
+        "ru9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "海",
+      "fullCodes": [
+        "cosf",
+        "cosz"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "邊",
+      "fullCodes": [
+        "ljnn"
+      ],
+      "quickCodes": [
+        "lj6"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "景",
+      "fullCodes": [
+        "py;c"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "gp"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "春",
+      "fullCodes": [
+        "zp"
+      ],
+      "quickCodes": [
+        "zp1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "夏",
+      "fullCodes": [
+        "alj."
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "j."
+      ],
+      "tier": 3
+    },
+    {
+      "char": "秋",
+      "fullCodes": [
+        "lv,"
+      ],
+      "quickCodes": [
+        "lv8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "朋",
+      "fullCodes": [
+        "uu"
+      ],
+      "quickCodes": [
+        "uu1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "友",
+      "fullCodes": [
+        "zb"
+      ],
+      "quickCodes": [
+        "zb1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "團",
+      "fullCodes": [
+        "pzfh"
+      ],
+      "quickCodes": [
+        "pz4"
+      ],
+      "specialCodes": [
+        "tz"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "聚",
+      "fullCodes": [
+        "aeb.",
+        "aebk"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "自",
+      "fullCodes": [
+        "lj"
+      ],
+      "quickCodes": [
+        "lj1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "由",
+      "fullCodes": [
+        "pf"
+      ],
+      "quickCodes": [
+        "pf1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "續",
+      "fullCodes": [
+        "xr/m"
+      ],
+      "quickCodes": [
+        "xr0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "清",
+      "fullCodes": [
+        "cru"
+      ],
+      "quickCodes": [
+        "cr7"
+      ],
+      "specialCodes": [
+        "cr"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "楚",
+      "fullCodes": [
+        "vvgc"
+      ],
+      "quickCodes": [
+        "vv5"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "表",
+      "fullCodes": [
+        "rlx"
+      ],
+      "quickCodes": [
+        "rl2"
+      ],
+      "specialCodes": [
+        "rl"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "達",
+      "fullCodes": [
+        "rifn"
+      ],
+      "quickCodes": [
+        "ri4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "找",
+      "fullCodes": [
+        "oax"
+      ],
+      "quickCodes": [
+        "oa2"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "先",
+      "fullCodes": [
+        "os"
+      ],
+      "quickCodes": [
+        "os3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "急",
+      "fullCodes": [
+        "jtn"
+      ],
+      "quickCodes": [
+        "jt6"
+      ],
+      "specialCodes": [
+        "jt"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "次",
+      "fullCodes": [
+        "kjk",
+        "aajk"
+      ],
+      "quickCodes": [
+        "aa7"
+      ],
+      "specialCodes": [
+        "ja"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "掌",
+      "fullCodes": [
+        "cj;o"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "握",
+      "fullCodes": [
+        "obar"
+      ],
+      "quickCodes": [
+        "ob1"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "建",
+      "fullCodes": [
+        "tfb"
+      ],
+      "quickCodes": [
+        "tf5"
+      ],
+      "specialCodes": [
+        "gb"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "慣",
+      "fullCodes": [
+        "npdm",
+        "npfm",
+        "nsfm",
+        "nszm"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "更",
+      "fullCodes": [
+        "ap."
+      ],
+      "quickCodes": [
+        "ap9"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "悉",
+      "fullCodes": [
+        "l,n"
+      ],
+      "quickCodes": [
+        "l,6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "可",
+      "fullCodes": [
+        "qd"
+      ],
+      "quickCodes": [
+        "qd1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "以",
+      "fullCodes": [
+        "xk"
+      ],
+      "quickCodes": [
+        "xk1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "追",
+      "fullCodes": [
+        "len"
+      ],
+      "quickCodes": [
+        "le6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "求",
+      "fullCodes": [
+        "f,h"
+      ],
+      "quickCodes": [
+        "f,6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "段",
+      "fullCodes": [
+        "osb"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "ss"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "穩",
+      "fullCodes": [
+        "lv.n"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "窗",
+      "fullCodes": [
+        "nklh",
+        "nklm"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "hl"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "外",
+      "fullCodes": [
+        "mc"
+      ],
+      "quickCodes": [
+        "mc1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "傘",
+      "fullCodes": [
+        "kkkf"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "有",
+      "fullCodes": [
+        "zu"
+      ],
+      "quickCodes": [
+        "zu1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "喜",
+      "fullCodes": [
+        "r;f;",
+        "r;i;"
+      ],
+      "quickCodes": [
+        "r;8"
+      ],
+      "specialCodes": [
+        "/;"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "附",
+      "fullCodes": [
+        "tkfh"
+      ],
+      "quickCodes": [
+        "tk4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "近",
+      "fullCodes": [
+        "on"
+      ],
+      "quickCodes": [
+        "on1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "這",
+      "fullCodes": [
+        "yn"
+      ],
+      "quickCodes": [
+        "yn1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "封",
+      "fullCodes": [
+        "rrfh"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "信",
+      "fullCodes": [
+        "ky"
+      ],
+      "quickCodes": [
+        "ky3"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "禮",
+      "fullCodes": [
+        "yhpi"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "hi"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "貌",
+      "fullCodes": [
+        ".lps"
+      ],
+      "quickCodes": [
+        ".l0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "重",
+      "fullCodes": [
+        "op"
+      ],
+      "quickCodes": [
+        "op1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "容",
+      "fullCodes": [
+        "nkk;"
+      ],
+      "quickCodes": [
+        "nk8"
+      ],
+      "specialCodes": [
+        "n;"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "忘",
+      "fullCodes": [
+        "ysn"
+      ],
+      "quickCodes": [
+        "ys6"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "買",
+      "fullCodes": [
+        "/m"
+      ],
+      "quickCodes": [
+        "/m1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "果",
+      "fullCodes": [
+        "pv"
+      ],
+      "quickCodes": [
+        "pv1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "牛",
+      "fullCodes": [
+        "of"
+      ],
+      "quickCodes": [
+        "of2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "奶",
+      "fullCodes": [
+        "wgl",
+        "wlg"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "需",
+      "fullCodes": [
+        "zale"
+      ],
+      "quickCodes": [
+        "za9"
+      ],
+      "specialCodes": [
+        ".u"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "指",
+      "fullCodes": [
+        "oqp"
+      ],
+      "quickCodes": [
+        "oq0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "才",
+      "fullCodes": [
+        "fl"
+      ],
+      "quickCodes": [
+        "fl1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "住",
+      "fullCodes": [
+        "kyr"
+      ],
+      "quickCodes": [
+        "ky4"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "遇",
+      "fullCodes": [
+        "pmn"
+      ],
+      "quickCodes": [
+        "pm6"
+      ],
+      "specialCodes": [
+        "mn"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "停",
+      "fullCodes": [
+        "ky;d"
+      ],
+      "quickCodes": [
+        "ky0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "簡",
+      "fullCodes": [
+        "lep"
+      ],
+      "quickCodes": [
+        "le0"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "特",
+      "fullCodes": [
+        "ofrh"
+      ],
+      "quickCodes": [
+        "of4"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "三",
+      "fullCodes": [
+        "aaa"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "s/"
+      ],
+      "tier": 2
+    },
+    {
+      "char": "具",
+      "fullCodes": [
+        "uak"
+      ],
+      "quickCodes": [
+        "ua8"
+      ],
+      "specialCodes": [],
+      "tier": 2
+    },
+    {
+      "char": "己",
+      "fullCodes": [
+        "ts"
+      ],
+      "quickCodes": [
+        "ts2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "合",
+      "fullCodes": [
+        "i;"
+      ],
+      "quickCodes": [
+        "i;1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "哪",
+      "fullCodes": [
+        ";gft",
+        ";gzt"
+      ],
+      "quickCodes": [
+        ";g4"
+      ],
+      "specialCodes": [
+        ";g"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "適",
+      "fullCodes": [
+        "ykjn"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "們",
+      "fullCodes": [
+        "ke"
+      ],
+      "quickCodes": [
+        "ke1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "讓",
+      "fullCodes": [
+        "yy;x"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "mz"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "靜",
+      "fullCodes": [
+        "ru.d"
+      ],
+      "quickCodes": [],
+      "specialCodes": [
+        "ud"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "升",
+      "fullCodes": [
+        "lf"
+      ],
+      "quickCodes": [
+        "lf2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "鐘",
+      "fullCodes": [
+        "iypr"
+      ],
+      "quickCodes": [
+        "iy0"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "繼",
+      "fullCodes": [
+        "xxxs"
+      ],
+      "quickCodes": [],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "比",
+      "fullCodes": [
+        "qq"
+      ],
+      "quickCodes": [
+        "qq1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "勉",
+      "fullCodes": [
+        "j;sb",
+        "jpsb"
+      ],
+      "quickCodes": [
+        "j;2"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "長",
+      "fullCodes": [
+        "qx"
+      ],
+      "quickCodes": [
+        "qx1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "久",
+      "fullCodes": [
+        "jk"
+      ],
+      "quickCodes": [
+        "jk2"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "懂",
+      "fullCodes": [
+        "nfop"
+      ],
+      "quickCodes": [
+        "nf9"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "留",
+      "fullCodes": [
+        "ohjp"
+      ],
+      "quickCodes": [
+        "oh7"
+      ],
+      "specialCodes": [],
+      "tier": 3
+    },
+    {
+      "char": "句",
+      "fullCodes": [
+        "l;"
+      ],
+      "quickCodes": [
+        "l;1",
+        "lx0"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "感",
+      "fullCodes": [
+        "zqnx",
+        "zqxn"
+      ],
+      "quickCodes": [
+        "zq6"
+      ],
+      "specialCodes": [
+        "z/"
+      ],
+      "tier": 3
+    },
+    {
+      "char": "受",
+      "fullCodes": [
+        ".jb"
+      ],
+      "quickCodes": [
+        ".j5"
+      ],
+      "specialCodes": [
+        "b."
+      ],
+      "tier": 2
+    },
+    {
+      "char": "只",
+      "fullCodes": [
+        ";k"
+      ],
+      "quickCodes": [
+        ";k1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    },
+    {
+      "char": "二",
+      "fullCodes": [
+        "aa"
+      ],
+      "quickCodes": [
+        "aa1"
+      ],
+      "specialCodes": [],
+      "tier": 1
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-1",
+      "text": "早安",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-2",
+      "text": "晚安",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-3",
+      "text": "謝謝",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-4",
+      "text": "請問",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-5",
+      "text": "再見",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-6",
+      "text": "今天",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-7",
+      "text": "明天",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-8",
+      "text": "昨天",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-9",
+      "text": "現在",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-10",
+      "text": "時間",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-11",
+      "text": "天氣",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-12",
+      "text": "下雨",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-13",
+      "text": "晴天",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-14",
+      "text": "回家",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-15",
+      "text": "上班",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-16",
+      "text": "下班",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-17",
+      "text": "學習",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-18",
+      "text": "練習",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-19",
+      "text": "輸入法",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-20",
+      "text": "行列輸入",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-21",
+      "text": "中文打字",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-22",
+      "text": "工作順利",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-23",
+      "text": "生活日常",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-24",
+      "text": "週末愉快",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-25",
+      "text": "一路平安",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-26",
+      "text": "身體健康",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-27",
+      "text": "心情很好",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-28",
+      "text": "慢慢來",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-29",
+      "text": "專心練習",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-30",
+      "text": "熟能生巧",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-31",
+      "text": "新的開始",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-32",
+      "text": "保持節奏",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-33",
+      "text": "閱讀文章",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-34",
+      "text": "整理資料",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-35",
+      "text": "完成任務",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-36",
+      "text": "回答問題",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-37",
+      "text": "分享想法",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-38",
+      "text": "認真思考",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-39",
+      "text": "仔細檢查",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-40",
+      "text": "注意安全",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-41",
+      "text": "歡迎回來",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-42",
+      "text": "準備好了",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-43",
+      "text": "休息一下",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-44",
+      "text": "喝杯熱茶",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-45",
+      "text": "記得吃飯",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-46",
+      "text": "早點睡覺",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-47",
+      "text": "出門走走",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-48",
+      "text": "搭車回家",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-49",
+      "text": "一起加油",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-50",
+      "text": "每天進步",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-51",
+      "text": "電話號碼",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-52",
+      "text": "電子郵件",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-53",
+      "text": "網路連線",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-54",
+      "text": "鍵盤位置",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-55",
+      "text": "字根拆碼",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-56",
+      "text": "常用文字",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-57",
+      "text": "正確答案",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-58",
+      "text": "下一個字",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-59",
+      "text": "顯示提示",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-60",
+      "text": "隱藏字根",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-61",
+      "text": "開啟設定",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-62",
+      "text": "儲存進度",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-63",
+      "text": "錯題複習",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-64",
+      "text": "速度挑戰",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-65",
+      "text": "完成練習",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-66",
+      "text": "反應時間",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-67",
+      "text": "基本筆形",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-68",
+      "text": "行列座標",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-69",
+      "text": "繁體中文",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-70",
+      "text": "系統輸入",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-71",
+      "text": "台灣文化",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-72",
+      "text": "城市散步",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-73",
+      "text": "海邊風景",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-74",
+      "text": "山上空氣",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-75",
+      "text": "春夏秋冬",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-76",
+      "text": "朋友見面",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-77",
+      "text": "家人團聚",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-78",
+      "text": "平安健康",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-79",
+      "text": "自由練習",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-80",
+      "text": "持續學習",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-81",
+      "text": "清楚表達",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-82",
+      "text": "快速找到",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-83",
+      "text": "輸入正確",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-84",
+      "text": "先看字根",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-85",
+      "text": "不用著急",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-86",
+      "text": "一次一個字",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-87",
+      "text": "從頭開始",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-88",
+      "text": "掌握方法",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-89",
+      "text": "建立習慣",
+      "category": "phrase"
+    },
+    {
+      "id": "phrase-90",
+      "text": "看著練習",
+      "category": "phrase"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "sentence-1",
+      "text": "今天從第一個字開始練習。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-2",
+      "text": "看著字根表，慢慢找到正確位置。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-3",
+      "text": "每次打對一個字，就更熟悉一點。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-4",
+      "text": "打不出來時，可以先看下一個鍵。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-5",
+      "text": "不用追求速度，先把拆碼看清楚。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-6",
+      "text": "每天練習一小段，進步會更穩定。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-7",
+      "text": "窗外正在下雨，記得帶一把傘。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-8",
+      "text": "早上喝一杯水，再開始今天的工作。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-9",
+      "text": "週末有空時，我喜歡到附近散步。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-10",
+      "text": "這封信寫得很清楚，也很有禮貌。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-11",
+      "text": "把重要的事情記下來，就不容易忘記。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-12",
+      "text": "回家以前，順路買一些水果和牛奶。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-13",
+      "text": "新的鍵位需要時間，手指才會記住。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-14",
+      "text": "遇到錯字先停一下，再重新拆一次。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-15",
+      "text": "熟悉完整碼之後，再挑戰簡碼和特別碼。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-16",
+      "text": "鍵盤上的三列，對應字根的上中下位置。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-17",
+      "text": "輸入法是工具，練習的節奏由自己決定。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-18",
+      "text": "完成一回合後，看看哪些字最需要複習。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-19",
+      "text": "今天的天氣很好，適合出門走走。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-20",
+      "text": "有問題就提出來，我們一起找答案。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-21",
+      "text": "閱讀讓人安靜，也能帶來新的想法。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-22",
+      "text": "專心做好眼前的事，速度自然會提升。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-23",
+      "text": "休息幾分鐘，再回來繼續練習。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-24",
+      "text": "正確比快速重要，穩定比勉強更長久。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-25",
+      "text": "我正在學習用行列輸入法打繁體中文。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-26",
+      "text": "看懂行列座標後，字根就比較容易記住。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-27",
+      "text": "錯題會留在本機，下次可以接著複習。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-28",
+      "text": "一句一句輸入，感受文字自然連起來。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-29",
+      "text": "不用和別人比較，只要比昨天更熟練。",
+      "category": "sentence"
+    },
+    {
+      "id": "sentence-30",
+      "text": "完成今天的二十題，就讓手指休息一下。",
+      "category": "sentence"
+    }
+  ]
+}
