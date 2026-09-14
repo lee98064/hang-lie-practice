@@ -53,6 +53,20 @@ describe('PracticeView', () => {
     vi.useRealTimers()
   })
 
+  it('切回分頁後會自動恢復鍵盤焦點', async () => {
+    const wrapper = mount(PracticeView, { global: { plugins: [createPinia()] }, attachTo: document.body })
+    const input = wrapper.get('.keyboard-capture').element as HTMLInputElement
+
+    input.blur()
+    expect(document.activeElement).not.toBe(input)
+    window.dispatchEvent(new Event('focus'))
+    await wrapper.vm.$nextTick()
+    await wrapper.vm.$nextTick()
+
+    expect(document.activeElement).toBe(input)
+    wrapper.unmount()
+  })
+
   it('停頓八秒後只提示下一鍵，不揭露整個答案', async () => {
     vi.useFakeTimers()
     const wrapper = mountPractice()

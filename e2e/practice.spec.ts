@@ -33,6 +33,13 @@ test('自動提示時間可調整並保存到本機', async ({ page }) => {
   await expect(delay).toHaveValue('manual')
 })
 
+test('切回分頁後鍵盤仍可作答', async ({ page }) => {
+  await page.locator('body').click({ position: { x: 20, y: 20 } })
+  await page.evaluate(() => window.dispatchEvent(new Event('focus')))
+  await page.keyboard.press('q')
+  await expect(page.locator('.feedback-line')).toBeVisible()
+})
+
 test('第二次錯鍵會亮起下一鍵且不污染答案', async ({ page }) => {
   const glyph = await page.locator('.glyph-platen strong').innerText()
   const possible = new Set(ARRAY_KEYS.filter(({ roots }) => roots[0] === glyph).map(({ key }) => key))

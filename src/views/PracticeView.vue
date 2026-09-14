@@ -287,7 +287,9 @@ function changeAutoHint(event: Event) {
 }
 
 function handlePhysicalKey(event: KeyboardEvent) {
-  if (event.metaKey || event.ctrlKey || event.altKey || isResolving.value || isComplete.value) return
+  if (mode.value !== 'code' || event.metaKey || event.ctrlKey || event.altKey || isResolving.value || isComplete.value) return
+  const target = event.target as HTMLElement | null
+  if (target && target !== captureInput.value && target.matches('input, textarea, select, button, [contenteditable="true"]')) return
   if (event.key === 'Backspace') {
     event.preventDefault()
     codeBuffer.value = codeBuffer.value.slice(0, -1)
@@ -412,15 +414,31 @@ function openReview() {
   chooseLesson('review')
 }
 
+function restoreAnswerFocus() {
+  focusAnswer()
+}
+
+function restoreVisibleAnswerFocus() {
+  if (document.visibilityState !== 'hidden') restoreAnswerFocus()
+}
+
 watch(() => currentPrompt.value?.id, () => {
   if (!isComplete.value) resetQuestionState()
 })
 
-onMounted(restartSession)
+onMounted(() => {
+  restartSession()
+  window.addEventListener('keydown', handlePhysicalKey)
+  window.addEventListener('focus', restoreAnswerFocus)
+  document.addEventListener('visibilitychange', restoreVisibleAnswerFocus)
+})
 onBeforeUnmount(() => {
   clearQuestionTimers()
   if (speedTimer) clearInterval(speedTimer)
   if (transitionTimer) clearTimeout(transitionTimer)
+  window.removeEventListener('keydown', handlePhysicalKey)
+  window.removeEventListener('focus', restoreAnswerFocus)
+  document.removeEventListener('visibilitychange', restoreVisibleAnswerFocus)
 })
 </script>
 
@@ -551,7 +569,7 @@ onBeforeUnmount(() => {
           :value="codeBuffer"
           readonly
           autocomplete="off"
-          @keydown="handlePhysicalKey"
+          @keydown.stop="handlePhysicalKey"
         />
         <textarea
           v-else
