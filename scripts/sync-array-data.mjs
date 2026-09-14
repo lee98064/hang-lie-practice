@@ -1,11 +1,28 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const CIN_URL = 'https://raw.githubusercontent.com/gontera/array30/master/cin2/ar30-regular-v2026-1.06-20260801.cin2'
+const CIN_URL = 'https://raw.githubusercontent.com/gontera/array30/master/cin2/ar30-big-v2026-1.06-20260801.cin2'
 const SPECIAL_URL = 'https://raw.githubusercontent.com/gontera/array30/master/array30_spec/ar30SpecialCodes-V201509.txt'
 const OUTPUT = resolve(dirname(fileURLToPath(import.meta.url)), '../src/data/array30.generated.json')
+const LOOKUP_OUTPUT = resolve(dirname(fileURLToPath(import.meta.url)), '../public/data/lookup')
+const LOOKUP_MANIFEST_OUTPUT = resolve(dirname(fileURLToPath(import.meta.url)), '../src/data/lookup-manifest.generated.json')
 const SELECT_KEYS = '1234567890'
+const DATA_VERSION = 'v2026-1.06 (2026-08-01)'
+
+const UNIFIED_IDEOGRAPH_RANGES = [
+  [0x3400, 0x4dbf],
+  [0x4e00, 0x9fff],
+  [0x20000, 0x2a6df],
+  [0x2a700, 0x2b73f],
+  [0x2b740, 0x2b81f],
+  [0x2b820, 0x2ceaf],
+  [0x2ceb0, 0x2ebef],
+  [0x2ebf0, 0x2ee5f],
+  [0x30000, 0x3134f],
+  [0x31350, 0x323af],
+  [0x323b0, 0x3347f],
+]
 
 const phrases = [
   '早安', '晚安', '謝謝', '請問', '再見', '今天', '明天', '昨天', '現在', '時間',
@@ -33,7 +50,8 @@ const sentences = [
 ]
 
 function isCjk(char) {
-  return /[\u3400-\u9fff\uf900-\ufaff]/u.test(char)
+  const codePoint = char.codePointAt(0)
+  return codePoint !== undefined && UNIFIED_IDEOGRAPH_RANGES.some(([start, end]) => codePoint >= start && codePoint <= end)
 }
 
 function parseSections(text) {
@@ -73,6 +91,18 @@ function unique(values) {
   return [...new Set(values)]
 }
 
+function normalizeEntry(entry) {
+  const fullCodes = unique(entry.fullCodes).sort((a, b) => a.length - b.length || a.localeCompare(b))
+  const minLength = Math.min(...fullCodes.map((code) => code.replace(/i$/, '').length))
+  return {
+    char: entry.char,
+    fullCodes,
+    quickCodes: unique(entry.quickCodes).sort((a, b) => a.length - b.length || a.localeCompare(b)),
+    specialCodes: unique(entry.specialCodes).sort(),
+    tier: minLength <= 2 ? 1 : minLength === 3 ? 2 : 3,
+  }
+}
+
 async function main() {
   const [cinResponse, specialResponse] = await Promise.all([fetch(CIN_URL), fetch(SPECIAL_URL)])
   if (!cinResponse.ok || !specialResponse.ok) throw new Error('無法下載官方行列資料。')
@@ -95,7 +125,7 @@ async function main() {
   const entries = new Map()
   for (const [code, value] of charDefs) {
     const chars = Array.from(value)
-    if (chars.length !== 1 || !isCjk(chars[0])) continue
+    if (chars.length !== 1) continue
     const char = chars[0]
     const pair = `${code}\u0000${char}`
     const entry = entries.get(char) ?? { char, allCodes: [], fullCodes: [], quickCodes: [], specialCodes: [], tier: 3 }
@@ -129,20 +159,13 @@ async function main() {
 
   const requiredChars = Array.from('行列輸入法個性願望')
   const contentChars = unique([...requiredChars, ...phrases.join(''), ...sentences.join('')].filter(isCjk))
+  const allEntries = [...entries.values()]
+    .filter((entry) => entry.fullCodes.length)
+    .map(normalizeEntry)
   const selected = unique([...commonChars, ...contentChars])
     .map((char) => entries.get(char))
     .filter((entry) => entry?.fullCodes.length)
-    .map((entry) => {
-      const fullCodes = unique(entry.fullCodes).sort((a, b) => a.length - b.length || a.localeCompare(b))
-      const minLength = Math.min(...fullCodes.map((code) => code.replace(/i$/, '').length))
-      return {
-        char: entry.char,
-        fullCodes,
-        quickCodes: unique(entry.quickCodes).sort((a, b) => a.length - b.length || a.localeCompare(b)),
-        specialCodes: unique(entry.specialCodes).sort(),
-        tier: minLength <= 2 ? 1 : minLength === 3 ? 2 : 3,
-      }
-    })
+    .map(normalizeEntry)
 
   const available = new Set(selected.map(({ char }) => char))
   const textIsAvailable = (text) => Array.from(text).filter(isCjk).every((char) => available.has(char))
@@ -150,7 +173,7 @@ async function main() {
 
   const output = {
     meta: {
-      version: 'v2026-1.06 (2026-08-01)',
+      version: DATA_VERSION,
       generatedAt: new Date().toISOString(),
       source: CIN_URL,
       entryCount: selected.length,
@@ -167,7 +190,41 @@ async function main() {
   }
   await mkdir(dirname(OUTPUT), { recursive: true })
   await writeFile(OUTPUT, `${JSON.stringify(output, null, 2)}\n`)
-  console.log(`已產生 ${output.characters.length} 字、${output.phrases.length} 詞、${output.sentences.length} 句。`)
+
+  const lookupChunks = new Map()
+  for (const entry of allEntries) {
+    const codePoint = entry.char.codePointAt(0)
+    const chunkKey = Math.floor(codePoint / 0x1000).toString(16)
+    const chunk = lookupChunks.get(chunkKey) ?? {}
+    chunk[entry.char] = [entry.fullCodes, entry.quickCodes, entry.specialCodes, entry.tier]
+    lookupChunks.set(chunkKey, chunk)
+  }
+
+  await rm(LOOKUP_OUTPUT, { recursive: true, force: true })
+  await mkdir(LOOKUP_OUTPUT, { recursive: true })
+  const chunkCounts = {}
+  for (const [key, chunk] of [...lookupChunks.entries()].sort(([left], [right]) => Number.parseInt(left, 16) - Number.parseInt(right, 16))) {
+    const count = Object.keys(chunk).length
+    chunkCounts[key] = count
+    await writeFile(resolve(LOOKUP_OUTPUT, `u${key}.json`), JSON.stringify(chunk))
+  }
+
+  const supplementaryEntryCount = allEntries.filter(({ char }) => char.codePointAt(0) > 0xffff).length
+  const unifiedIdeographEntryCount = allEntries.filter(({ char }) => isCjk(char)).length
+  const manifest = {
+    version: DATA_VERSION,
+    generatedAt: output.meta.generatedAt,
+    source: CIN_URL,
+    entryCount: allEntries.length,
+    unifiedIdeographEntryCount,
+    supplementaryEntryCount,
+    chunks: chunkCounts,
+  }
+  await writeFile(LOOKUP_MANIFEST_OUTPUT, `${JSON.stringify(manifest, null, 2)}\n`)
+  if (manifest.entryCount < 100000 || manifest.supplementaryEntryCount < 74000) {
+    throw new Error(`大字集不足：${manifest.entryCount} 字、${manifest.supplementaryEntryCount} 個擴充區字元`)
+  }
+  console.log(`已產生 ${output.characters.length} 字教材、${output.phrases.length} 詞、${output.sentences.length} 句，以及 ${manifest.entryCount} 字查表資料（${lookupChunks.size} 個分塊）。`)
 }
 
 await main()

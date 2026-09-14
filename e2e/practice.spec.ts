@@ -52,6 +52,18 @@ test('速度碼明確等待使用者開始', async ({ page }) => {
   await expect(page.getByText('60 秒')).toBeVisible()
 })
 
+test('字根表可從本機大字集查到罕見字', async ({ page }) => {
+  await page.getByRole('link', { name: '字根表' }).click()
+  await page.getByLabel('要查哪個字？').fill('𨑨')
+
+  await expect(page.locator('.lookup-glyph strong')).toHaveText('𨑨')
+  await expect(page.locator('.lookup-glyph small')).toHaveText('U+28468')
+  await expect(page.locator('.lookup-result')).toContainText('PNI')
+
+  const dimensions = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth }))
+  expect(dimensions.scroll).toBeLessThanOrEqual(dimensions.client)
+})
+
 test('手機版沒有水平溢位', async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== 'mobile')
   const dimensions = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth }))

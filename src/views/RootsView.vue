@@ -1,12 +1,45 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import TypeTray from '../components/TypeTray.vue'
-import { arrayData, characterByGlyph } from '../data'
+import { isArrayLookupCharacter } from '../data'
 import { codeToCoordinates } from '../data/keys'
+import { lookupCharacter, lookupManifest } from '../data/lookup'
+import type { CharacterEntry } from '../types'
 
 const query = ref('')
-const searchedChar = computed(() => Array.from(query.value.trim())[0] ?? '')
-const result = computed(() => characterByGlyph.get(searchedChar.value))
+const searchedChar = computed(() => Array.from(query.value.trim()).find(isArrayLookupCharacter) ?? '')
+const result = ref<CharacterEntry>()
+const lookupState = ref<'idle' | 'loading' | 'found' | 'not-found' | 'error'>('idle')
+let searchToken = 0
+
+const unicodeLabel = computed(() => {
+  const codePoint = searchedChar.value.codePointAt(0)
+  return codePoint === undefined ? '' : `U+${codePoint.toString(16).toUpperCase().padStart(4, '0')}`
+})
+
+const lookupCount = new Intl.NumberFormat('zh-TW').format(lookupManifest.unifiedIdeographEntryCount)
+
+async function runLookup(char: string) {
+  const token = ++searchToken
+  result.value = undefined
+  if (!char) {
+    lookupState.value = 'idle'
+    return
+  }
+
+  lookupState.value = 'loading'
+  try {
+    const entry = await lookupCharacter(char)
+    if (token !== searchToken) return
+    result.value = entry
+    lookupState.value = entry ? 'found' : 'not-found'
+  } catch {
+    if (token === searchToken) lookupState.value = 'error'
+  }
+}
+
+watch(searchedChar, runLookup, { immediate: true })
+
 const basicStrokes = [
   ['1', '一', '橫'], ['2', '𠃋', '逆彎'], ['3', '丨', '直'], ['4', '十', '正交'], ['5', '㇇', '順彎'],
   ['6', '丶', '點'], ['7', 'ㄇ', '蓋'], ['8', '八・乀', '八捺'], ['9', '丿', '撇'], ['0', '口', '方框'],
@@ -45,14 +78,26 @@ const basicStrokes = [
       <div class="lookup-copy">
         <p class="section-kicker">單字查碼</p>
         <h2>卡住時，先把字查清楚。</h2>
-        <p>輸入一個繁體中文字，查看完整碼、簡碼與特別碼。練習題仍會把三者分開。</p>
+        <p>輸入一個中文字，查看完整碼、簡碼與特別碼。練習題仍會把三者分開。</p>
+        <p class="lookup-coverage">涵蓋官方大字集中的 <b>{{ lookupCount }}</b> 個 Unicode 17 統一表意文字。</p>
       </div>
       <div class="lookup-control">
         <label for="character-lookup">要查哪個字？</label>
-        <input id="character-lookup" v-model="query" maxlength="2" placeholder="例：行" />
+        <input
+          id="character-lookup"
+          v-model="query"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-describedby="lookup-font-note"
+          placeholder="例：行或𨑨"
+        />
       </div>
-      <div v-if="result" class="lookup-result" aria-live="polite">
-        <strong>{{ result.char }}</strong>
+      <div v-if="lookupState === 'found' && result" class="lookup-result" aria-live="polite">
+        <div class="lookup-glyph">
+          <strong>{{ result.char }}</strong>
+          <small>{{ unicodeLabel }}</small>
+        </div>
         <dl>
           <div>
             <dt>完整碼</dt>
@@ -70,7 +115,18 @@ const basicStrokes = [
           </div>
         </dl>
       </div>
-      <p v-else-if="searchedChar" class="lookup-empty" role="status">目前的 {{ arrayData.meta.entryCount }} 字練習教材中找不到這個字。</p>
+      <p v-else-if="lookupState === 'loading'" class="lookup-status" role="status">正在翻查 {{ unicodeLabel }} 的字碼…</p>
+      <p v-else-if="lookupState === 'not-found'" class="lookup-empty" role="status">
+        官方 {{ lookupManifest.version }} 大字集中找不到「{{ searchedChar }}」。
+      </p>
+      <div v-else-if="lookupState === 'error'" class="lookup-empty lookup-error" role="alert">
+        <span>字碼資料未能載入，請稍後再試。</span>
+        <button class="button quiet" type="button" @click="runLookup(searchedChar)">重新查詢</button>
+      </div>
+      <p v-else-if="query.trim()" class="lookup-empty" role="status">請輸入一個中文字再查詢。</p>
+      <p id="lookup-font-note" class="lookup-font-note">
+        罕見字能否顯示原字形，取決於瀏覽器或裝置已安裝的字型；即使顯示成方框，字碼仍可正常查詢。
+      </p>
     </section>
   </div>
 </template>
