@@ -1,15 +1,20 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import BasicStrokeGuide from '../components/BasicStrokeGuide.vue'
 import ModeSwitch from '../components/ModeSwitch.vue'
 import SessionSummary from '../components/SessionSummary.vue'
 import TypeTray from '../components/TypeTray.vue'
 import { arrayData, characterByGlyph, characterEntries, isCjkCharacter } from '../data'
 import { ARRAY_KEYS, codeToCoordinates, VALID_CODE_KEYS } from '../data/keys'
 import { useProgressStore } from '../stores/progress'
-import type { Attempt, CharacterEntry, InputMode, LessonKind, PracticePrompt } from '../types'
-import { isValidPrefix, matchingAnswer, shuffle } from '../utils/practice'
+import type { Attempt, AutoHintSeconds, CharacterEntry, InputMode, LessonKind, PracticePrompt } from '../types'
+import { AUTO_HINT_OPTIONS, isValidPrefix, matchingAnswer, shuffle } from '../utils/practice'
 
 const SESSION_SIZE = 20
+const autoHintChoices = AUTO_HINT_OPTIONS.map((seconds) => ({
+  value: seconds === null ? 'manual' : String(seconds),
+  label: seconds === null ? '僅手動' : `${seconds} 秒`,
+}))
 const lessons: { kind: LessonKind; label: string; short: string }[] = [
   { kind: 'roots', label: '認識字根', short: '鍵位' },
   { kind: 'full-code', label: '完整拆碼', short: '單字' },
@@ -168,8 +173,11 @@ function clearQuestionTimers() {
 function scheduleHints() {
   clearQuestionTimers()
   if (isComplete.value || isResolving.value || (lesson.value === 'quick-code' && !speedActive.value)) return
-  hintTimer = setTimeout(() => raiseHint(1, true), 8000)
-  revealTimer = setTimeout(() => raiseHint(2, true), 15000)
+  const delaySeconds = progress.settings.autoHintSeconds
+  if (delaySeconds === null) return
+  const delay = delaySeconds * 1000
+  hintTimer = setTimeout(() => raiseHint(1, true), delay)
+  revealTimer = setTimeout(() => raiseHint(2, true), delay * 2)
 }
 
 function focusAnswer() {
@@ -254,14 +262,27 @@ function registerWrong(key = '') {
   feedback.value = wrongCount.value === 1
     ? '這個鍵不在目前拆碼裡，沒有寫入答案。'
     : '再看一次字形；需要的話，讓提示帶你走下一步。'
-  if (wrongCount.value >= 4) raiseHint(2, true)
-  else if (wrongCount.value >= 2) raiseHint(1, true)
+  if (progress.settings.autoHintSeconds !== null) {
+    if (wrongCount.value >= 4) raiseHint(2, true)
+    else if (wrongCount.value >= 2) raiseHint(1, true)
+  }
   setTimeout(() => { if (errorKey.value === key) errorKey.value = '' }, 420)
   focusAnswer()
 }
 
 function toggleTray(event: Event) {
   progress.setShowTray((event.target as HTMLInputElement).checked)
+  focusAnswer()
+}
+
+function changeAutoHint(event: Event) {
+  const value = (event.target as HTMLSelectElement).value
+  const seconds: AutoHintSeconds = value === 'manual' ? null : Number(value) as Exclude<AutoHintSeconds, null>
+  progress.setAutoHintSeconds(seconds)
+  feedback.value = seconds === null
+    ? '自動提示已關閉；需要時再按「提示」。'
+    : `停頓 ${seconds} 秒後會亮起下一鍵。`
+  scheduleHints()
   focusAnswer()
 }
 
@@ -433,16 +454,32 @@ onBeforeUnmount(() => {
           :disabled-text="lesson === 'roots' || lesson === 'quick-code' || lesson === 'review'"
           @update:model-value="changeMode"
         />
-        <label class="tray-toggle">
-          <input
-            type="checkbox"
-            :checked="progress.settings.showTray"
-            @change="toggleTray"
-          />
-          <span aria-hidden="true" />
-          顯示拆碼表
-        </label>
+        <div class="practice-settings">
+          <label class="hint-delay">
+            <span>自動提示</span>
+            <select
+              :value="progress.settings.autoHintSeconds ?? 'manual'"
+              aria-label="自動提示等待時間"
+              @change="changeAutoHint"
+            >
+              <option v-for="choice in autoHintChoices" :key="choice.value" :value="choice.value">
+                {{ choice.label }}
+              </option>
+            </select>
+          </label>
+          <label class="tray-toggle">
+            <input
+              type="checkbox"
+              :checked="progress.settings.showTray"
+              @change="toggleTray"
+            />
+            <span aria-hidden="true" />
+            顯示拆碼表
+          </label>
+        </div>
       </header>
+
+      <BasicStrokeGuide compact class="practice-strokes" />
 
       <SessionSummary
         v-if="isComplete"

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
+import BasicStrokeGuide from '../components/BasicStrokeGuide.vue'
 import TypeTray from '../components/TypeTray.vue'
 import { isArrayLookupCharacter } from '../data'
 import { codeToCoordinates } from '../data/keys'
@@ -40,10 +41,6 @@ async function runLookup(char: string) {
 
 watch(searchedChar, runLookup, { immediate: true })
 
-const basicStrokes = [
-  ['1', '一', '橫'], ['2', '𠃋', '逆彎'], ['3', '丨', '直'], ['4', '十', '正交'], ['5', '㇇', '順彎'],
-  ['6', '丶', '點'], ['7', 'ㄇ', '蓋'], ['8', '八・乀', '八捺'], ['9', '丿', '撇'], ['0', '口', '方框'],
-]
 </script>
 
 <template>
@@ -58,19 +55,7 @@ const basicStrokes = [
       </p>
     </section>
 
-    <section class="stroke-system" aria-labelledby="stroke-title">
-      <header>
-        <p class="section-kicker">十種基本筆形</p>
-        <h2 id="stroke-title">先認數字，再找上中下。</h2>
-      </header>
-      <div class="stroke-grid">
-        <div v-for="stroke in basicStrokes" :key="stroke[0]">
-          <b>{{ stroke[0] }}</b>
-          <strong>{{ stroke[1] }}</strong>
-          <span>{{ stroke[2] }}</span>
-        </div>
-      </div>
-    </section>
+    <BasicStrokeGuide />
 
     <TypeTray :interactive="false" />
 

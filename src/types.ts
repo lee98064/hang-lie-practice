@@ -1,5 +1,6 @@
 export type InputMode = 'code' | 'text'
 export type LessonKind = 'roots' | 'full-code' | 'phrase' | 'quick-code' | 'review'
+export type AutoHintSeconds = 8 | 15 | 30 | 60 | null
 
 export interface KeyDefinition {
   key: string
@@ -59,6 +60,7 @@ export interface TrainerSettings {
   inputMode: InputMode
   lastLesson: LessonKind
   dailyGoal: number
+  autoHintSeconds: AutoHintSeconds
 }
 
 export interface PersistedState {

@@ -1,6 +1,6 @@
 import { computed, ref } from 'vue'
 import { defineStore } from 'pinia'
-import type { Attempt, InputMode, LessonKind } from '../types'
+import type { Attempt, AutoHintSeconds, InputMode, LessonKind } from '../types'
 import { createDefaultState, loadPersistedState, STORAGE_KEY, updateMastery } from '../utils/practice'
 
 export const useProgressStore = defineStore('progress', () => {
@@ -50,6 +50,11 @@ export const useProgressStore = defineStore('progress', () => {
     persist()
   }
 
+  function setAutoHintSeconds(value: AutoHintSeconds) {
+    settings.value.autoHintSeconds = value
+    persist()
+  }
+
   function recordAttempt(attempt: Attempt) {
     attempts.value.push(attempt)
     if (attempts.value.length > 240) attempts.value.splice(0, attempts.value.length - 240)
@@ -83,6 +88,7 @@ export const useProgressStore = defineStore('progress', () => {
     setShowTray,
     setInputMode,
     setLesson,
+    setAutoHintSeconds,
     recordAttempt,
     completeSession,
     resetProgress,

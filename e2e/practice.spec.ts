@@ -25,6 +25,14 @@ test('拆碼表開關會保存到本機', async ({ page }) => {
   await expect(toggle).not.toBeChecked()
 })
 
+test('自動提示時間可調整並保存到本機', async ({ page }) => {
+  const delay = page.getByLabel('自動提示等待時間')
+  await delay.selectOption('manual')
+  await expect(page.getByText('自動提示已關閉')).toBeVisible()
+  await page.reload()
+  await expect(delay).toHaveValue('manual')
+})
+
 test('第二次錯鍵會亮起下一鍵且不污染答案', async ({ page }) => {
   const glyph = await page.locator('.glyph-platen strong').innerText()
   const possible = new Set(ARRAY_KEYS.filter(({ roots }) => roots[0] === glyph).map(({ key }) => key))
@@ -49,7 +57,7 @@ test('速度碼明確等待使用者開始', async ({ page }) => {
   await page.getByRole('button', { name: /速度碼/ }).click()
   await expect(page.getByRole('button', { name: '開始 60 秒' })).toBeVisible()
   await page.getByRole('button', { name: '開始 60 秒' }).click()
-  await expect(page.getByText('60 秒')).toBeVisible()
+  await expect(page.getByLabel('本回合進度').getByText('60 秒')).toBeVisible()
 })
 
 test('字根表可從本機大字集查到罕見字', async ({ page }) => {

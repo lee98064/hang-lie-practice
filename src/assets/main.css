@@ -216,6 +216,20 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .mode-switch button.active { color: var(--tray); background: var(--paper); box-shadow: 0 2px 8px rgba(23, 75, 75, 0.08); }
 .mode-switch button:disabled { cursor: not-allowed; opacity: 0.38; }
 
+.practice-settings { display: flex; align-items: center; justify-content: flex-end; gap: 17px; }
+.hint-delay { display: grid; gap: 3px; color: #71827f; font-size: 9px; white-space: nowrap; }
+.hint-delay select {
+  min-width: 82px;
+  height: 30px;
+  padding: 0 25px 0 9px;
+  border: 1px solid #c8d7d4;
+  border-radius: 8px;
+  color: var(--tray);
+  background: var(--paper);
+  font: 600 11px 'Noto Sans TC', sans-serif;
+  cursor: pointer;
+}
+.hint-delay select:focus-visible { outline: 3px solid rgba(53, 90, 138, 0.32); outline-offset: 2px; }
 .tray-toggle { display: flex; align-items: center; gap: 8px; white-space: nowrap; color: #5e716e; font-size: 12px; font-weight: 600; cursor: pointer; }
 .tray-toggle input { position: absolute; width: 1px; height: 1px; opacity: 0; }
 .tray-toggle > span { width: 34px; height: 20px; padding: 3px; display: block; background: #cbd8d6; border-radius: 99px; transition: background 160ms ease; }
@@ -382,6 +396,35 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .stroke-grid b { color: var(--indigo); font: 600 11px 'IBM Plex Mono', monospace; }
 .stroke-grid strong { color: var(--tray); font-family: 'LXGW WenKai TC', serif; font-size: 22px; white-space: nowrap; }
 .stroke-grid span { color: #7b8a88; font-size: 10px; }
+.practice-strokes {
+  margin: 0;
+  padding: 11px 26px 13px;
+  border: 0;
+  border-bottom: 1px solid #dce7e5;
+  border-radius: 0;
+  background: #f3f8f7;
+}
+.practice-strokes header { margin-bottom: 8px; align-items: center; }
+.practice-strokes header .section-kicker { margin: 0; }
+.practice-strokes h2 {
+  color: #71827f;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+.practice-strokes .stroke-grid { border-radius: 8px; }
+.practice-strokes .stroke-grid div {
+  min-height: 43px;
+  padding: 5px 4px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+}
+.practice-strokes .stroke-grid b { font-size: 10px; }
+.practice-strokes .stroke-grid strong { font-size: 18px; }
+.practice-strokes .stroke-grid span { grid-column: 1 / -1; font-size: 9px; }
 .reference-page > .type-tray { margin-bottom: 28px; }
 .lookup-panel { padding: 36px; display: grid; grid-template-columns: 1.1fr .7fr 1.35fr; align-items: center; gap: 36px; border: 1px solid #c8d8d5; border-radius: 20px 20px 36px 20px; background: rgba(252,254,253,.72); }
 .lookup-copy p:not(.section-kicker) { margin: 12px 0 0; max-width: 460px; color: #6d7e7b; line-height: 1.7; }
@@ -448,7 +491,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
   .site-header { grid-template-columns: 1fr auto; }
   .daily-progress { display: none; }
   .workbench-header { grid-template-columns: 1fr 130px auto; }
-  .tray-toggle { grid-column: 1 / -1; justify-self: end; margin-top: -10px; }
+  .practice-settings { grid-column: 1 / -1; justify-self: end; margin-top: -10px; }
   .lookup-panel { grid-template-columns: 1fr 1fr; }
   .lookup-result, .lookup-status, .lookup-empty { grid-column: 1 / -1; }
   .key-roots { font-size: 11px; }
@@ -477,7 +520,17 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
   .session-progress { width: 110px; }
   .mode-switch { justify-self: start; }
   .mode-switch button { min-height: 32px; padding: 0 10px; }
-  .tray-toggle { grid-column: auto; justify-self: end; margin: 0; font-size: 10px; }
+  .practice-settings { grid-column: auto; justify-self: end; margin: 0; gap: 10px; }
+  .hint-delay > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .hint-delay select { min-width: 75px; height: 28px; padding-left: 7px; font-size: 10px; }
+  .tray-toggle { font-size: 10px; }
+  .practice-strokes { padding: 9px 15px 11px; }
+  .practice-strokes header { margin-bottom: 7px; display: flex; }
+  .practice-strokes h2 { font-size: 9px; }
+  .practice-strokes .stroke-grid { grid-template-columns: repeat(5, 1fr); }
+  .practice-strokes .stroke-grid div { min-height: 36px; padding: 3px; column-gap: 4px; }
+  .practice-strokes .stroke-grid strong { font-size: 15px; }
+  .practice-strokes .stroke-grid span { font-size: 8px; }
   .practice-stage { min-height: 292px; padding: 8px 16px 12px; }
   .prompt-caption { min-height: 20px; font-size: 11px; }
   .phrase-context { font-size: 16px; padding: 6px 10px; }

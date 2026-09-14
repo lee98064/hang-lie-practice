@@ -56,4 +56,14 @@ describe('本機資料', () => {
     expect(loadPersistedState().schemaVersion).toBe(1)
     expect(loadPersistedState().settings.showTray).toBe(true)
   })
+
+  it('舊設定會補上預設提示秒數，無效秒數不會被採用', () => {
+    const defaults = createDefaultState()
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      ...defaults,
+      settings: { ...defaults.settings, autoHintSeconds: 999 },
+    }))
+
+    expect(loadPersistedState().settings.autoHintSeconds).toBe(8)
+  })
 })

@@ -1,5 +1,18 @@
 import type { KeyDefinition } from '../types'
 
+export const BASIC_STROKES = [
+  { number: '1', glyph: '一', name: '橫' },
+  { number: '2', glyph: '𠃋', name: '逆彎' },
+  { number: '3', glyph: '丨', name: '直' },
+  { number: '4', glyph: '十', name: '正交' },
+  { number: '5', glyph: '㇇', name: '順彎' },
+  { number: '6', glyph: '丶', name: '點' },
+  { number: '7', glyph: 'ㄇ', name: '蓋' },
+  { number: '8', glyph: '八・乀', name: '八捺' },
+  { number: '9', glyph: '丿', name: '撇' },
+  { number: '0', glyph: '口', name: '方框' },
+] as const
+
 export const ARRAY_KEYS: KeyDefinition[] = [
   { key: 'q', coordinate: '1上', roots: ['言', '工', '上', '七'], row: 'upper' },
   { key: 'w', coordinate: '2上', roots: ['女', '巛', '糹'], row: 'upper' },

@@ -1,7 +1,8 @@
-import type { Attempt, MasteryRecord, PersistedState } from '../types'
+import type { Attempt, AutoHintSeconds, MasteryRecord, PersistedState } from '../types'
 
 export const STORAGE_KEY = 'array30-trainer:v1'
 export const REVIEW_INTERVAL_DAYS = [0, 1, 3, 7, 14, 30] as const
+export const AUTO_HINT_OPTIONS: AutoHintSeconds[] = [8, 15, 30, 60, null]
 
 export function createDefaultState(): PersistedState {
   return {
@@ -11,6 +12,7 @@ export function createDefaultState(): PersistedState {
       inputMode: 'code',
       lastLesson: 'roots',
       dailyGoal: 20,
+      autoHintSeconds: 8,
     },
     mastery: {},
     attempts: [],
@@ -26,10 +28,14 @@ export function loadPersistedState(storage: Pick<Storage, 'getItem'> = localStor
     if (parsed.schemaVersion !== 1 || !parsed.settings || !parsed.mastery || !Array.isArray(parsed.attempts)) {
       return createDefaultState()
     }
+    const defaults = createDefaultState()
+    const autoHintSeconds = AUTO_HINT_OPTIONS.includes(parsed.settings.autoHintSeconds as AutoHintSeconds)
+      ? parsed.settings.autoHintSeconds as AutoHintSeconds
+      : defaults.settings.autoHintSeconds
     return {
-      ...createDefaultState(),
+      ...defaults,
       ...parsed,
-      settings: { ...createDefaultState().settings, ...parsed.settings },
+      settings: { ...defaults.settings, ...parsed.settings, autoHintSeconds },
       attempts: parsed.attempts.slice(-240),
     }
   } catch {

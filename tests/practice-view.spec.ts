@@ -8,6 +8,51 @@ function mountPractice() {
 }
 
 describe('PracticeView', () => {
+  it('在練習工作台顯示完整十種基本筆形', () => {
+    const wrapper = mountPractice()
+
+    expect(wrapper.get('.practice-strokes').text()).toContain('十種基本筆形')
+    expect(wrapper.findAll('.practice-strokes [role="listitem"]')).toHaveLength(10)
+    expect(wrapper.get('.practice-strokes').text()).toContain('1一橫')
+    expect(wrapper.get('.practice-strokes').text()).toContain('0口方框')
+    wrapper.unmount()
+  })
+
+  it('可調整自動提示秒數並保存設定', async () => {
+    vi.useFakeTimers()
+    const wrapper = mountPractice()
+    const select = wrapper.get('[aria-label="自動提示等待時間"]')
+
+    await select.setValue('15')
+    vi.advanceTimersByTime(8000)
+    await wrapper.vm.$nextTick()
+    expect(wrapper.find('.code-cell.next').exists()).toBe(false)
+
+    vi.advanceTimersByTime(7000)
+    await wrapper.vm.$nextTick()
+    expect(wrapper.find('.code-cell.next').exists()).toBe(true)
+    expect(JSON.parse(localStorage.getItem('array30-trainer:v1')!).settings.autoHintSeconds).toBe(15)
+    wrapper.unmount()
+    vi.useRealTimers()
+  })
+
+  it('選擇僅手動後不會因停頓或答錯顯示答案', async () => {
+    vi.useFakeTimers()
+    const wrapper = mountPractice()
+    await wrapper.get('[aria-label="自動提示等待時間"]').setValue('manual')
+
+    await wrapper.get('.keyboard-capture').trigger('keydown', { key: '1' })
+    await wrapper.get('.keyboard-capture').trigger('keydown', { key: '1' })
+    vi.advanceTimersByTime(120_000)
+    await wrapper.vm.$nextTick()
+
+    expect(wrapper.find('.code-cell.next').exists()).toBe(false)
+    expect(wrapper.find('.code-cell.revealed').exists()).toBe(false)
+    expect(JSON.parse(localStorage.getItem('array30-trainer:v1')!).settings.autoHintSeconds).toBeNull()
+    wrapper.unmount()
+    vi.useRealTimers()
+  })
+
   it('停頓八秒後只提示下一鍵，不揭露整個答案', async () => {
     vi.useFakeTimers()
     const wrapper = mountPractice()
