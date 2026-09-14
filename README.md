@@ -2,6 +2,8 @@
 
 使用 Vue 3、TypeScript 與 Vite 製作的行列 30 練習網站。提供完整碼逐鍵練習、系統輸入法詞句練習、分級提示、可收合字根表、速度碼、本機複習排程，以及可查罕見字的完整字碼查詢。
 
+線上版本：[lee98064.github.io/hang-lie-practice](https://lee98064.github.io/hang-lie-practice/)
+
 ## 開發
 
 ```bash
