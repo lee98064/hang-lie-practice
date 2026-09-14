@@ -79,3 +79,13 @@ export interface PracticePrompt {
   expectedAnswers: string[]
   isRetry?: boolean
 }
+
+export interface DecompositionStep {
+  key: string
+  coordinate: string
+  strokeNumber: string
+  strokeGlyph: string
+  strokeName: string
+  row: string
+  roots: string[]
+}

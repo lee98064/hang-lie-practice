@@ -40,6 +40,12 @@ test('切回分頁後鍵盤仍可作答', async ({ page }) => {
   await expect(page.locator('.feedback-line')).toBeVisible()
 })
 
+test('為什麼這樣拆可展開逐鍵說明', async ({ page }) => {
+  await page.getByRole('button', { name: '為什麼這樣拆？' }).click()
+  await expect(page.locator('.why-content')).toContainText('官方完整碼')
+  await expect(page.locator('.why-steps li')).not.toHaveCount(0)
+})
+
 test('第二次錯鍵會亮起下一鍵且不污染答案', async ({ page }) => {
   const glyph = await page.locator('.glyph-platen strong').innerText()
   const possible = new Set(ARRAY_KEYS.filter(({ roots }) => roots[0] === glyph).map(({ key }) => key))

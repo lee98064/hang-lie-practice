@@ -67,6 +67,18 @@ describe('PracticeView', () => {
     wrapper.unmount()
   })
 
+  it('可展開逐鍵說明並顯示取碼理由', async () => {
+    const wrapper = mountPractice()
+
+    await wrapper.get('.why-toggle').trigger('click')
+    await wrapper.vm.$nextTick()
+    expect(wrapper.get('.why-content').text()).toContain('官方完整碼')
+    expect(wrapper.findAll('.why-steps li').length).toBeGreaterThan(0)
+    expect(wrapper.get('.why-content').text()).toContain('鍵位資料')
+    expect(wrapper.find('.code-cell.revealed').exists()).toBe(true)
+    wrapper.unmount()
+  })
+
   it('停頓八秒後只提示下一鍵，不揭露整個答案', async () => {
     vi.useFakeTimers()
     const wrapper = mountPractice()

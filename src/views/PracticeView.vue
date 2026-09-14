@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import BasicStrokeGuide from '../components/BasicStrokeGuide.vue'
+import DecompositionGuide from '../components/DecompositionGuide.vue'
 import ModeSwitch from '../components/ModeSwitch.vue'
 import SessionSummary from '../components/SessionSummary.vue'
 import TypeTray from '../components/TypeTray.vue'
 import { arrayData, characterByGlyph, characterEntries, isCjkCharacter } from '../data'
-import { ARRAY_KEYS, codeToCoordinates, VALID_CODE_KEYS } from '../data/keys'
+import { ARRAY_KEYS, BASIC_STROKES, codeToCoordinates, KEY_LOOKUP, VALID_CODE_KEYS } from '../data/keys'
 import { useProgressStore } from '../stores/progress'
-import type { Attempt, AutoHintSeconds, CharacterEntry, InputMode, LessonKind, PracticePrompt } from '../types'
+import type { Attempt, AutoHintSeconds, CharacterEntry, DecompositionStep, InputMode, LessonKind, PracticePrompt } from '../types'
 import { AUTO_HINT_OPTIONS, isValidPrefix, matchingAnswer, shuffle } from '../utils/practice'
 
 const SESSION_SIZE = 20
@@ -32,6 +33,7 @@ const textInput = ref('')
 const wrongCount = ref(0)
 const hintsUsed = ref(0)
 const hintLevel = ref(0)
+const whyOpen = ref(false)
 const feedback = ref('')
 const errorKey = ref('')
 const pressedKey = ref('')
@@ -79,6 +81,20 @@ const primaryAnswer = computed(() => acceptedAnswers.value[0] ?? '')
 const activeCandidate = computed(() => acceptedAnswers.value.find((answer) => answer.startsWith(codeBuffer.value)) ?? primaryAnswer.value)
 const nextExpectedKey = computed(() => activeCandidate.value[codeBuffer.value.length] ?? '')
 const answerCoordinates = computed(() => codeToCoordinates(primaryAnswer.value))
+const decompositionSteps = computed<DecompositionStep[]>(() => [...primaryAnswer.value].map((key) => {
+  const definition = KEY_LOOKUP.get(key)
+  const [strokeNumber = '', row = ''] = definition?.coordinate ?? ['', '']
+  const stroke = BASIC_STROKES.find(({ number }) => number === strokeNumber)
+  return {
+    key,
+    coordinate: definition?.coordinate ?? `候選 ${key}`,
+    strokeNumber,
+    strokeGlyph: stroke?.glyph ?? key.toUpperCase(),
+    strokeName: stroke?.name ?? '鍵位',
+    row,
+    roots: definition?.roots ?? [],
+  }
+}))
 const lessonTitle = computed(() => lessons.find(({ kind }) => kind === lesson.value)?.label ?? '')
 const progressPercent = computed(() => {
   if (lesson.value === 'quick-code') return speedActive.value ? (60 - remainingSeconds.value) / 60 * 100 : 0
@@ -193,6 +209,7 @@ function resetQuestionState() {
   wrongCount.value = 0
   hintsUsed.value = 0
   hintLevel.value = 0
+  whyOpen.value = false
   feedback.value = mode.value === 'text' ? '開啟系統行列輸入法，輸入上方文字。' : '看清字形後，直接按下完整鍵碼。'
   errorKey.value = ''
   pressedKey.value = ''
@@ -284,6 +301,16 @@ function changeAutoHint(event: Event) {
     : `停頓 ${seconds} 秒後會亮起下一鍵。`
   scheduleHints()
   focusAnswer()
+}
+
+function toggleExplanation() {
+  if (whyOpen.value) {
+    whyOpen.value = false
+    focusAnswer()
+    return
+  }
+  whyOpen.value = true
+  raiseHint(2)
 }
 
 function handlePhysicalKey(event: KeyboardEvent) {
@@ -422,8 +449,10 @@ function restoreVisibleAnswerFocus() {
   if (document.visibilityState !== 'hidden') restoreAnswerFocus()
 }
 
-watch(() => currentPrompt.value?.id, () => {
-  if (!isComplete.value) resetQuestionState()
+watch(() => currentPrompt.value?.id, (promptId, previousPromptId) => {
+  // The initial queue is created in onMounted; avoid a second reset that could
+  // race with the first interaction before Vue flushes the initial watcher.
+  if (promptId && previousPromptId && promptId !== previousPromptId && !isComplete.value) resetQuestionState()
 })
 
 onMounted(() => {
@@ -593,6 +622,14 @@ onBeforeUnmount(() => {
           </button>
           <button class="button text-button" @click="skipPrompt">先跳過</button>
         </div>
+
+        <DecompositionGuide
+          :char="activeGlyph"
+          :answers="acceptedAnswers"
+          :steps="decompositionSteps"
+          :open="whyOpen"
+          @toggle-guide="toggleExplanation"
+        />
       </div>
 
       <Transition name="tray-slide">
